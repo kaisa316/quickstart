@@ -30,17 +30,58 @@ use Illuminate\Http\Request;
 
 	//hello world begin
 	Route::get('/helloworld',function() {
-		//return 'hello world';	
+		
+		/*
+		$hw_chunk = App\HelloWorld::where('id','>',5)->orderBy('id','desc')->chunk(10,function ($item){
+			echo $item;
+		});
+		*/
+		//$first = App\HelloWorld::where('id','>',5)->where('id','<',10)->get();
+		//var_dump($one);
 		return view('helloworld_show');
 	});
 
 	//add new one hello world
 	Route::post('/add_hw',function(Request $request) {
-		$info = $request->all();	
+		/*	
 		$name = $request->input('name');
-		echo $name;
-		print_r($info);	
+		$new = new App\HelloWorld();
+		$new->title = $name;
+		$new->save();
+		 */
+		 
+		/*
+		echo $request;
+		App\HelloWorld::create(['title'=>$request->input('name')]);
+		 */
 		echo 'add hw';
+	});
+
+	Route::post('update_hw',function(Request $request){
+		/*
+		$hw = App\HelloWorld::find(20);		
+		$hw->title = $request->input('name');
+		$hw->save();
+		 */
+		/*
+		$result = App\HelloWorld::where('id','>',3)->where('id','<',7)->toSql();
+		 */
+		$cond_attr = ['title'=>'nanjing'];
+		$update_attr = ['title'=>'zhangyy'];
+		App\HelloWorld::updateOrCreate($cond_attr,$update_attr);
+		return 'update hw';
+	});
+
+	Route::post('delete_hw',function(){
+		/*
+		$hw = App\HelloWorld::find(27);	
+		$hw->delete();
+		 */
+		/*
+		App\HelloWorld::destroy(26);
+		 */
+		App\HelloWorld::where('title','')->delete();
+		return 'delete success';
 	});
 	//hello world end
 
