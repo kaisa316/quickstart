@@ -8,12 +8,37 @@
                 <div class="panel-heading">hello world</div>
 
                 <div class="panel-body">
+
+				<!--add new record-->
 				<form action="{{ url('/add_hw') }}" method="post">
                         {{ csrf_field() }}
 						<input type="text" name="name" />
 						<input type="text" name="age"/>
-						<input type="submit" value="提交"/> 
+						<input type="submit" value="新增"/> 
 				</form>
+				<!--更新 -->
+				<form action="{{ url('/update_hw') }}" method="post">
+                        {{ csrf_field() }}
+						<input type="text" name="name" />
+						<input type="submit" value="更新"/> 
+				</form>
+				<!--delete record -->
+				<form action="{{ url('/delete_hw') }}" method="post">
+                        {{ csrf_field() }}
+						<input type="submit" value="删除"/> 
+				</form>
+
+
+				<table>
+					@foreach($list as $item)
+					<tr>
+						<td>{{$item->title}}</td>
+						<td>{{$item->created_at}}</td>
+						<td></td>
+					</tr>
+					@endforeach
+
+				</table>
                 </div>
             </div>
         </div>

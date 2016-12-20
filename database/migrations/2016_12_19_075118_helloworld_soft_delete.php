@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTasksTable extends Migration
+class HelloworldSoftDelete extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateTasksTable extends Migration
      */
     public function up()
     {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        //
+		Schema::table('helloworld',function($table) {
+			$table->softDeletes();	
+		});
     }
 
     /**
@@ -25,6 +25,9 @@ class CreateTasksTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tasks');
+        //
+		Schema::table('helloworld',function($table) {
+			$table->dropSoftDeletes();	
+		});
     }
 }

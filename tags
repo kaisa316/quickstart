@@ -17,9 +17,7 @@ A	vendor/psy/psysh/test/Psy/Test/CodeCleaner/StaticConstructorPassTest.php	/^   
 A	vendor/psy/psysh/test/Psy/Test/CodeCleaner/StaticConstructorPassTest.php	/^            array('namespace B; class A { private static function __construct() {}}'),$/;"	c
 A	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                class A {$/;"	c
 A	vendor/symfony/yaml/Tests/DumperTest.php	/^class A$/;"	c
-APACHE_MIME_TYPES_URL	vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php	/^define('APACHE_MIME_TYPES_URL', 'http:\/\/svn.apache.org\/repos\/asf\/httpd\/httpd\/trunk\/docs\/conf\/mime.types');$/;"	d
 API	vendor/mockery/mockery/library/Mockery/Mock.php	/^            \/\/ __toString is special because we force its addition to the class API regardless of the$/;"	c
-ARTISAN_BINARY	vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php	/^            define('ARTISAN_BINARY', 'artisan');$/;"	d
 AbstractAdapter	vendor/league/flysystem/src/Adapter/AbstractAdapter.php	/^abstract class AbstractAdapter implements AdapterInterface$/;"	c
 AbstractAnnotationLoaderTest	vendor/symfony/routing/Tests/Loader/AbstractAnnotationLoaderTest.php	/^abstract class AbstractAnnotationLoaderTest extends \\PHPUnit_Framework_TestCase$/;"	c
 AbstractClass	vendor/symfony/routing/Tests/Fixtures/AnnotatedClasses/AbstractClass.php	/^abstract class AbstractClass$/;"	c
@@ -58,6 +56,7 @@ AbstractProxyTest	vendor/symfony/http-foundation/Tests/Session/Storage/Proxy/Abs
 AbstractSurrogateFragmentRenderer	vendor/symfony/http-kernel/Fragment/AbstractSurrogateFragmentRenderer.php	/^abstract class AbstractSurrogateFragmentRenderer extends RoutableFragmentRenderer$/;"	c
 AbstractSyslogHandler	vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php	/^abstract class AbstractSyslogHandler extends AbstractProcessingHandler$/;"	c
 AbstractTest	vendor/phpunit/phpunit/tests/_files/AbstractTest.php	/^abstract class AbstractTest extends PHPUnit_Framework_TestCase$/;"	c
+AbstractTrait	vendor/phpunit/phpunit-mock-objects/tests/_fixture/AbstractTrait.php	/^trait AbstractTrait$/;"	t
 AcceptHeader	vendor/symfony/http-foundation/AcceptHeader.php	/^class AcceptHeader$/;"	c
 AcceptHeaderItem	vendor/symfony/http-foundation/AcceptHeaderItem.php	/^class AcceptHeaderItem$/;"	c
 AcceptHeaderItemTest	vendor/symfony/http-foundation/Tests/AcceptHeaderItemTest.php	/^class AcceptHeaderItemTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -162,6 +161,7 @@ ApcStore	vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php	/^class ApcS
 ApcWrapper	vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php	/^class ApcWrapper$/;"	c
 App	vendor/laravel/framework/src/Illuminate/Support/Facades/App.php	/^class App extends Facade$/;"	c
 AppNameCommand	vendor/laravel/framework/src/Illuminate/Foundation/Console/AppNameCommand.php	/^class AppNameCommand extends Command$/;"	c
+AppNamespaceDetectorTrait	vendor/laravel/framework/src/Illuminate/Console/AppNamespaceDetectorTrait.php	/^trait AppNamespaceDetectorTrait$/;"	t
 AppServiceProvider	app/Providers/AppServiceProvider.php	/^class AppServiceProvider extends ServiceProvider$/;"	c
 Application	vendor/laravel/framework/src/Illuminate/Console/Application.php	/^class Application extends SymfonyApplication implements ApplicationContract$/;"	c
 Application	vendor/laravel/framework/src/Illuminate/Contracts/Console/Application.php	/^interface Application$/;"	i
@@ -230,15 +230,21 @@ AuthManager	vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php	/^class
 AuthServiceProvider	app/Providers/AuthServiceProvider.php	/^class AuthServiceProvider extends ServiceProvider$/;"	c
 AuthServiceProvider	vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php	/^class AuthServiceProvider extends ServiceProvider$/;"	c
 AuthServiceProvider	vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/AuthServiceProvider.php	/^class AuthServiceProvider extends ServiceProvider$/;"	c
+Authenticatable	vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php	/^trait Authenticatable$/;"	t
 Authenticatable	vendor/laravel/framework/src/Illuminate/Contracts/Auth/Authenticatable.php	/^interface Authenticatable$/;"	i
 Authenticate	app/Http/Middleware/Authenticate.php	/^class Authenticate$/;"	c
 AuthenticateWithBasicAuth	vendor/laravel/framework/src/Illuminate/Auth/Middleware/AuthenticateWithBasicAuth.php	/^class AuthenticateWithBasicAuth$/;"	c
+AuthenticatesAndRegistersUsers	vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php	/^trait AuthenticatesAndRegistersUsers$/;"	t
+AuthenticatesUsers	vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php	/^trait AuthenticatesUsers$/;"	t
 Author	vendor/phpunit/phpunit/tests/_files/Author.php	/^class Author$/;"	c
 Author	vendor/sebastian/comparator/tests/_files/Author.php	/^class Author$/;"	c
 AuthorTag	vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/AuthorTag.php	/^class AuthorTag extends Tag$/;"	c
 Authorizable	vendor/laravel/framework/src/Illuminate/Contracts/Auth/Access/Authorizable.php	/^interface Authorizable$/;"	i
+Authorizable	vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php	/^trait Authorizable$/;"	t
 AuthorizationException	vendor/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php	/^class AuthorizationException extends Exception$/;"	c
 Authorize	vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/Authorize.php	/^class Authorize$/;"	c
+AuthorizesRequests	vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php	/^trait AuthorizesRequests$/;"	t
+AuthorizesResources	vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesResources.php	/^trait AuthorizesResources$/;"	t
 AutoCompleter	vendor/psy/psysh/src/Psy/TabCompletion/AutoCompleter.php	/^class AutoCompleter$/;"	c
 AutoCompleterTest	vendor/psy/psysh/test/Psy/Test/TabCompletion/AutoCompleterTest.php	/^class AutoCompleterTest extends \\PHPUnit_Framework_TestCase$/;"	c
 AutoExpireFlashBag	vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php	/^class AutoExpireFlashBag implements FlashBagInterface$/;"	c
@@ -321,7 +327,9 @@ BooleanAnd	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanAnd.p
 BooleanNot	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php	/^class BooleanNot extends Expr$/;"	c
 BooleanOr	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/BooleanOr.php	/^class BooleanOr extends BinaryOp$/;"	c
 BootProviders	vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php	/^class BootProviders$/;"	c
+BootstrapFourNextPreviousButtonRendererTrait	vendor/laravel/framework/src/Illuminate/Pagination/BootstrapFourNextPreviousButtonRendererTrait.php	/^trait BootstrapFourNextPreviousButtonRendererTrait$/;"	t
 BootstrapFourPresenter	vendor/laravel/framework/src/Illuminate/Pagination/BootstrapFourPresenter.php	/^class BootstrapFourPresenter implements PresenterContract$/;"	c
+BootstrapThreeNextPreviousButtonRendererTrait	vendor/laravel/framework/src/Illuminate/Pagination/BootstrapThreeNextPreviousButtonRendererTrait.php	/^trait BootstrapThreeNextPreviousButtonRendererTrait$/;"	t
 BootstrapThreePresenter	vendor/laravel/framework/src/Illuminate/Pagination/BootstrapThreePresenter.php	/^class BootstrapThreePresenter implements PresenterContract$/;"	c
 Bor	vendor/phpunit/php-code-coverage/tests/_files/source_with_ignore.php	/^interface Bor$/;"	i
 BothForms	vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/HasToStringTest.php	/^class BothForms$/;"	c
@@ -392,7 +400,9 @@ CallbackToken	vendor/phpspec/prophecy/src/Prophecy/Argument/Token/CallbackToken.
 CallbackTokenSpec	vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/CallbackTokenSpec.php	/^class CallbackTokenSpec extends ObjectBehavior$/;"	c
 CalledClassPass	vendor/psy/psysh/src/Psy/CodeCleaner/CalledClassPass.php	/^class CalledClassPass extends CodeCleanerPass$/;"	c
 CalledClassPassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/CalledClassPassTest.php	/^class CalledClassPassTest extends CodeCleanerTestCase$/;"	c
+CanResetPassword	vendor/laravel/framework/src/Illuminate/Auth/Passwords/CanResetPassword.php	/^trait CanResetPassword$/;"	t
 CanResetPassword	vendor/laravel/framework/src/Illuminate/Contracts/Auth/CanResetPassword.php	/^interface CanResetPassword$/;"	i
+CapsuleManagerTrait	vendor/laravel/framework/src/Illuminate/Support/Traits/CapsuleManagerTrait.php	/^trait CapsuleManagerTrait$/;"	t
 Carbon	vendor/nesbot/carbon/src/Carbon/Carbon.php	/^class Carbon extends DateTime$/;"	c
 CarbonInterval	vendor/nesbot/carbon/src/Carbon/CarbonInterval.php	/^class CarbonInterval extends DateInterval$/;"	c
 CaseMismatch	vendor/symfony/debug/Tests/Fixtures/casemismatch.php	/^class CaseMismatch$/;"	c
@@ -435,6 +445,7 @@ ClassEnumerator	vendor/psy/psysh/src/Psy/Command/ListCommand/ClassEnumerator.php
 ClassFinder	vendor/laravel/framework/src/Illuminate/Filesystem/ClassFinder.php	/^class ClassFinder$/;"	c
 ClassLike	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ClassLike.php	/^abstract class ClassLike extends Node\\Stmt {$/;"	c
 ClassList	vendor/classpreloader/classpreloader/src/ClassList.php	/^class ClassList$/;"	c
+ClassLoader	public/vendor/composer/ClassLoader.php	/^class ClassLoader$/;"	c
 ClassLoader	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^class ClassLoader$/;"	c
 ClassLoader	vendor/composer/ClassLoader.php	/^class ClassLoader$/;"	c
 ClassLoader	vendor/laravel/framework/src/Illuminate/Support/ClassLoader.php	/^class ClassLoader$/;"	c
@@ -603,6 +614,7 @@ CompilerEngine	vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngi
 CompilerInterface	vendor/laravel/framework/src/Illuminate/View/Compilers/CompilerInterface.php	/^interface CompilerInterface$/;"	i
 Composer	vendor/laravel/framework/src/Illuminate/Support/Composer.php	/^class Composer$/;"	c
 ComposerAutoloaderInit362812a2feef5fbd6138b81f756efbc8	vendor/composer/autoload_real.php	/^class ComposerAutoloaderInit362812a2feef5fbd6138b81f756efbc8$/;"	c
+ComposerAutoloaderInit7b3218b78fb2124bfd2cf041ff1d26b1	public/vendor/composer/autoload_real.php	/^class ComposerAutoloaderInit7b3218b78fb2124bfd2cf041ff1d26b1$/;"	c
 ComposerScripts	vendor/laravel/framework/src/Illuminate/Foundation/ComposerScripts.php	/^class ComposerScripts$/;"	c
 ComposerServiceProvider	vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php	/^class ComposerServiceProvider extends ServiceProvider$/;"	c
 CompositeExpectation	vendor/mockery/mockery/library/Mockery/CompositeExpectation.php	/^class CompositeExpectation implements ExpectationInterface$/;"	c
@@ -616,6 +628,7 @@ ConcreteWithMyCustomExtensionTest	vendor/phpunit/phpunit/tests/_files/ConcreteTe
 Config	vendor/classpreloader/classpreloader/src/Config.php	/^class Config$/;"	c
 Config	vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php	/^class Config extends Facade$/;"	c
 Config	vendor/league/flysystem/src/Config.php	/^class Config$/;"	c
+ConfigAwareTrait	vendor/league/flysystem/src/ConfigAwareTrait.php	/^trait ConfigAwareTrait$/;"	t
 ConfigCacheCommand	vendor/laravel/framework/src/Illuminate/Foundation/Console/ConfigCacheCommand.php	/^class ConfigCacheCommand extends Command$/;"	c
 ConfigClearCommand	vendor/laravel/framework/src/Illuminate/Foundation/Console/ConfigClearCommand.php	/^class ConfigClearCommand extends Command$/;"	c
 ConfigDataCollector	vendor/symfony/http-kernel/DataCollector/ConfigDataCollector.php	/^class ConfigDataCollector extends DataCollector$/;"	c
@@ -627,6 +640,7 @@ Configuration	vendor/mockery/mockery/library/Mockery/Configuration.php	/^class C
 Configuration	vendor/psy/psysh/src/Psy/Configuration.php	/^class Configuration$/;"	c
 ConfigurationTest	vendor/psy/psysh/test/Psy/Test/ConfigurationTest.php	/^class ConfigurationTest extends \\PHPUnit_Framework_TestCase$/;"	c
 ConfigureLogging	vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/ConfigureLogging.php	/^class ConfigureLogging$/;"	c
+ConfirmableTrait	vendor/laravel/framework/src/Illuminate/Console/ConfirmableTrait.php	/^trait ConfirmableTrait$/;"	t
 ConfirmationQuestion	vendor/symfony/console/Question/ConfirmationQuestion.php	/^class ConfirmationQuestion extends Question$/;"	c
 ConflictHttpException	vendor/symfony/http-kernel/Exception/ConflictHttpException.php	/^class ConflictHttpException extends HttpException$/;"	c
 Connection	vendor/laravel/framework/src/Illuminate/Database/Connection.php	/^class Connection implements ConnectionInterface$/;"	c
@@ -755,9 +769,8 @@ Crawler	vendor/symfony/dom-crawler/Crawler.php	/^class Crawler implements \\Coun
 CrawlerTest	vendor/symfony/dom-crawler/Tests/CrawlerTest.php	/^class CrawlerTest extends \\PHPUnit_Framework_TestCase$/;"	c
 CreatePasswordResetsTable	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^class CreatePasswordResetsTable extends Migration$/;"	c
 CreateTasksTable	database/migrations/2016_04_18_102933_create_tasks_table.php	/^class CreateTasksTable extends Migration$/;"	c
-CreateTasksTable	database/migrations/2016_06_22_080733_create_tasks_table.php	/^class CreateTasksTable extends Migration$/;"	c
 CreateUsersTable	database/migrations/2014_10_12_000000_create_users_table.php	/^class CreateUsersTable extends Migration$/;"	c
-CreateYytestTable	database/migrations/2016_06_22_081704_create_yytest_table.php	/^class CreateYytestTable extends Migration$/;"	c
+CreatesUserProviders	vendor/laravel/framework/src/Illuminate/Auth/CreatesUserProviders.php	/^trait CreatesUserProviders$/;"	t
 CronExpression	vendor/mtdowling/cron-expression/src/Cron/CronExpression.php	/^class CronExpression$/;"	c
 CronExpressionTest	vendor/mtdowling/cron-expression/tests/Cron/CronExpressionTest.php	/^class CronExpressionTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Crypt	vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php	/^class Crypt extends Facade$/;"	c
@@ -804,6 +817,7 @@ DatabaseFailedJobProvider	vendor/laravel/framework/src/Illuminate/Queue/Failed/D
 DatabaseJob	vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php	/^class DatabaseJob extends Job implements JobContract$/;"	c
 DatabaseManager	vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php	/^class DatabaseManager implements ConnectionResolverInterface$/;"	c
 DatabaseMigrationRepository	vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php	/^class DatabaseMigrationRepository implements MigrationRepositoryInterface$/;"	c
+DatabaseMigrations	vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php	/^trait DatabaseMigrations$/;"	t
 DatabasePresenceVerifier	vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php	/^class DatabasePresenceVerifier implements PresenceVerifierInterface$/;"	c
 DatabaseQueue	vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php	/^class DatabaseQueue extends Queue implements QueueContract$/;"	c
 DatabaseSeeder	database/seeds/DatabaseSeeder.php	/^class DatabaseSeeder extends Seeder$/;"	c
@@ -811,6 +825,7 @@ DatabaseServiceProvider	vendor/laravel/framework/src/Illuminate/Database/Databas
 DatabaseSessionHandler	vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php	/^class DatabaseSessionHandler implements SessionHandlerInterface, ExistenceAwareInterface$/;"	c
 DatabaseStore	vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php	/^class DatabaseStore implements Store$/;"	c
 DatabaseTokenRepository	vendor/laravel/framework/src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php	/^class DatabaseTokenRepository implements TokenRepositoryInterface$/;"	c
+DatabaseTransactions	vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTransactions.php	/^trait DatabaseTransactions$/;"	t
 DatabaseUserProvider	vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php	/^class DatabaseUserProvider implements UserProvider$/;"	c
 DateComparator	vendor/symfony/finder/Comparator/DateComparator.php	/^class DateComparator extends Comparator$/;"	c
 DateComparatorTest	vendor/symfony/finder/Tests/Comparator/DateComparatorTest.php	/^class DateComparatorTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -870,6 +885,7 @@ DescriptorCommand2	vendor/symfony/console/Tests/Fixtures/DescriptorCommand2.php	
 DescriptorHelper	vendor/symfony/console/Helper/DescriptorHelper.php	/^class DescriptorHelper extends Helper$/;"	c
 DescriptorInterface	vendor/symfony/console/Descriptor/DescriptorInterface.php	/^interface DescriptorInterface$/;"	i
 DetectEnvironment	vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/DetectEnvironment.php	/^class DetectEnvironment$/;"	c
+DetectsLostConnections	vendor/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php	/^trait DetectsLostConnections$/;"	t
 DiagnosingMatcher	vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/DiagnosingMatcher.php	/^abstract class DiagnosingMatcher extends BaseMatcher$/;"	c
 Diff	vendor/sebastian/diff/src/Diff.php	/^class Diff$/;"	c
 Differ	vendor/sebastian/diff/src/Differ.php	/^class Differ$/;"	c
@@ -886,6 +902,7 @@ Dispatcher	vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php	/^class Di
 Dispatcher	vendor/laravel/framework/src/Illuminate/Contracts/Bus/Dispatcher.php	/^interface Dispatcher$/;"	i
 Dispatcher	vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php	/^interface Dispatcher$/;"	i
 Dispatcher	vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php	/^class Dispatcher implements DispatcherContract$/;"	c
+DispatchesJobs	vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php	/^trait DispatchesJobs$/;"	t
 Div	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php	/^class Div extends AssignOp$/;"	c
 Div	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Div.php	/^class Div extends BinaryOp$/;"	c
 Do_	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Do_.php	/^class Do_ extends Node\\Stmt$/;"	c
@@ -940,10 +957,6 @@ DumperRoute	vendor/symfony/routing/Matcher/Dumper/DumperRoute.php	/^class Dumper
 DumperTest	vendor/symfony/yaml/Tests/DumperTest.php	/^class DumperTest extends \\PHPUnit_Framework_TestCase$/;"	c
 DynamoDbHandler	vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php	/^class DynamoDbHandler extends AbstractProcessingHandler$/;"	c
 DynamoDbHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/DynamoDbHandlerTest.php	/^class DynamoDbHandlerTest extends TestCase$/;"	c
-ERR_READ_FAILED	vendor/symfony/process/Tests/PipeStdinInStdoutStdErrStreamSelect.php	/^define('ERR_READ_FAILED', 3);$/;"	d
-ERR_SELECT_FAILED	vendor/symfony/process/Tests/PipeStdinInStdoutStdErrStreamSelect.php	/^define('ERR_SELECT_FAILED', 1);$/;"	d
-ERR_TIMEOUT	vendor/symfony/process/Tests/PipeStdinInStdoutStdErrStreamSelect.php	/^define('ERR_TIMEOUT', 2);$/;"	d
-ERR_WRITE_FAILED	vendor/symfony/process/Tests/PipeStdinInStdoutStdErrStreamSelect.php	/^define('ERR_WRITE_FAILED', 4);$/;"	d
 Echo_	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Echo_.php	/^class Echo_ extends Node\\Stmt$/;"	c
 ElasticSearchHandler	vendor/monolog/monolog/src/Monolog/Handler/ElasticSearchHandler.php	/^class ElasticSearchHandler extends AbstractProcessingHandler$/;"	c
 ElasticSearchHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/ElasticSearchHandlerTest.php	/^class ElasticSearchHandlerTest extends TestCase$/;"	c
@@ -1116,7 +1129,6 @@ ExtensionPresentExtension	vendor/symfony/http-kernel/Tests/Fixtures/ExtensionPre
 Extensions_PhptTestCaseTest	vendor/phpunit/phpunit/tests/Extensions/PhptTestCaseTest.php	/^class Extensions_PhptTestCaseTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Extensions_RepeatedTestTest	vendor/phpunit/phpunit/tests/Extensions/RepeatedTestTest.php	/^class Extensions_RepeatedTestTest extends PHPUnit_Framework_TestCase$/;"	c
 ExtractorInterface	vendor/symfony/translation/Extractor/ExtractorInterface.php	/^interface ExtractorInterface$/;"	i
-FREEDESKTOP_XML_URL	vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php	/^define('FREEDESKTOP_XML_URL', 'https:\/\/raw2.github.com\/minad\/mimemagic\/master\/script\/freedesktop.org.xml');$/;"	d
 Facade	vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php	/^abstract class Facade$/;"	c
 Factory	vendor/classpreloader/classpreloader/src/Factory.php	/^class Factory$/;"	c
 Factory	vendor/fzaninotto/faker/src/Faker/Factory.php	/^class Factory$/;"	c
@@ -1321,8 +1333,6 @@ Function_	vendor/nikic/php-parser/lib/PhpParser/Builder/Function_.php	/^class Fu
 Function_	vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php	/^class Function_ extends MagicConst$/;"	c
 Function_	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Function_.php	/^class Function_ extends Node\\Stmt implements FunctionLike$/;"	c
 FunctionsMatcher	vendor/psy/psysh/src/Psy/TabCompletion/Matcher/FunctionsMatcher.php	/^class FunctionsMatcher extends AbstractMatcher$/;"	c
-GENERATOR_BASE	vendor/hamcrest/hamcrest-php/generator/run.php	/^define('GENERATOR_BASE', __DIR__);$/;"	d
-GLOBAL_FUNCTIONS_FILE	vendor/hamcrest/hamcrest-php/generator/run.php	/^define('GLOBAL_FUNCTIONS_FILE', HAMCREST_BASE . DIRECTORY_SEPARATOR . 'Hamcrest.php');$/;"	d
 GNUReadline	vendor/psy/psysh/src/Psy/Readline/GNUReadline.php	/^class GNUReadline implements Readline$/;"	c
 GNUReadlineTest	vendor/psy/psysh/test/Psy/Test/Readline/GNUReadlineTest.php	/^class GNUReadlineTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Gate	vendor/laravel/framework/src/Illuminate/Auth/Access/Gate.php	/^class Gate implements GateContract$/;"	c
@@ -1368,9 +1378,7 @@ GroupHandler	vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php	/^class
 GroupHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/GroupHandlerTest.php	/^class GroupHandlerTest extends TestCase$/;"	c
 GroupUse	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/GroupUse.php	/^class GroupUse extends Stmt$/;"	c
 Guard	vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php	/^interface Guard$/;"	i
-HAMCREST_BASE	vendor/hamcrest/hamcrest-php/generator/run.php	/^define('HAMCREST_BASE', realpath(dirname(GENERATOR_BASE) . DIRECTORY_SEPARATOR . 'hamcrest'));$/;"	d
-HAMCREST_BASE	vendor/hamcrest/hamcrest-php/tests/bootstrap.php	/^define('HAMCREST_BASE', realpath(dirname(dirname(__FILE__))));$/;"	d
-HAMCREST_TEST_BASE	vendor/hamcrest/hamcrest-php/tests/bootstrap.php	/^define('HAMCREST_TEST_BASE', realpath(dirname(__FILE__)));$/;"	d
+GuardHelpers	vendor/laravel/framework/src/Illuminate/Auth/GuardHelpers.php	/^trait GuardHelpers$/;"	t
 HIncludeFragmentRenderer	vendor/symfony/http-kernel/Fragment/HIncludeFragmentRenderer.php	/^class HIncludeFragmentRenderer extends RoutableFragmentRenderer$/;"	c
 HIncludeFragmentRendererTest	vendor/symfony/http-kernel/Tests/Fragment/HIncludeFragmentRendererTest.php	/^class HIncludeFragmentRendererTest extends \\PHPUnit_Framework_TestCase$/;"	c
 HaltCompiler	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/HaltCompiler.php	/^class HaltCompiler extends Stmt$/;"	c
@@ -1383,6 +1391,7 @@ HandlerInterface	vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php
 HandlerInterface	vendor/symfony/css-selector/Parser/Handler/HandlerInterface.php	/^interface HandlerInterface$/;"	i
 HandlerWrapper	vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php	/^class HandlerWrapper implements HandlerInterface$/;"	c
 HandlerWrapperTest	vendor/monolog/monolog/tests/Monolog/Handler/HandlerWrapperTest.php	/^class HandlerWrapperTest extends TestCase$/;"	c
+HandlesAuthorization	vendor/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php	/^trait HandlesAuthorization$/;"	t
 HasElement	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/HasElement.php	/^class HasElement extends PageConstraint$/;"	c
 HasInElement	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/HasInElement.php	/^class HasInElement extends PageConstraint$/;"	c
 HasKey	vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php	/^class HasKey extends MatcherAbstract$/;"	c
@@ -1411,6 +1420,8 @@ HashServiceProvider	vendor/laravel/framework/src/Illuminate/Hashing/HashServiceP
 Hasher	vendor/laravel/framework/src/Illuminate/Contracts/Hashing/Hasher.php	/^interface Hasher$/;"	i
 HeaderBag	vendor/symfony/http-foundation/HeaderBag.php	/^class HeaderBag implements \\IteratorAggregate, \\Countable$/;"	c
 HeaderBagTest	vendor/symfony/http-foundation/Tests/HeaderBagTest.php	/^class HeaderBagTest extends \\PHPUnit_Framework_TestCase$/;"	c
+HelloWorld	app/HelloWorld.php	/^class HelloWorld extends Model$/;"	c
+Helloworld	database/migrations/2016_12_14_085744_helloworld.php	/^class Helloworld extends Migration$/;"	c
 HelpCommand	vendor/psy/psysh/src/Psy/Command/HelpCommand.php	/^class HelpCommand extends Command$/;"	c
 HelpCommand	vendor/symfony/console/Command/HelpCommand.php	/^class HelpCommand extends Command$/;"	c
 HelpCommandTest	vendor/symfony/console/Tests/Command/HelpCommandTest.php	/^class HelpCommandTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -1470,6 +1481,7 @@ Image	vendor/fzaninotto/faker/src/Faker/Provider/Image.php	/^class Image extends
 ImageTest	vendor/fzaninotto/faker/test/Faker/Provider/ImageTest.php	/^class ImageTest extends \\PHPUnit_Framework_TestCase$/;"	c
 ImmutableEventDispatcher	vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php	/^class ImmutableEventDispatcher implements EventDispatcherInterface$/;"	c
 ImmutableEventDispatcherTest	vendor/symfony/event-dispatcher/Tests/ImmutableEventDispatcherTest.php	/^class ImmutableEventDispatcherTest extends \\PHPUnit_Framework_TestCase$/;"	c
+ImpersonatesUsers	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/ImpersonatesUsers.php	/^trait ImpersonatesUsers$/;"	t
 ImplicitReturnPass	vendor/psy/psysh/src/Psy/CodeCleaner/ImplicitReturnPass.php	/^class ImplicitReturnPass extends CodeCleanerPass$/;"	c
 ImplicitReturnPassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ImplicitReturnPassTest.php	/^class ImplicitReturnPassTest extends CodeCleanerTestCase$/;"	c
 Include_	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php	/^class Include_ extends Expr$/;"	c
@@ -1520,6 +1532,13 @@ InstantiatorInterface	vendor/doctrine/instantiator/src/Doctrine/Instantiator/Ins
 InstantiatorPerformanceEvent	vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorPerformance/InstantiatorPerformanceEvent.php	/^class InstantiatorPerformanceEvent extends AthleticEvent$/;"	c
 InstantiatorTest	vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/InstantiatorTest.php	/^class InstantiatorTest extends PHPUnit_Framework_TestCase$/;"	c
 Int_	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Int_.php	/^class Int_ extends Cast$/;"	c
+InteractsWithAuthentication	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.php	/^trait InteractsWithAuthentication$/;"	t
+InteractsWithConsole	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php	/^trait InteractsWithConsole$/;"	t
+InteractsWithContainer	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.php	/^trait InteractsWithContainer$/;"	t
+InteractsWithDatabase	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.php	/^trait InteractsWithDatabase$/;"	t
+InteractsWithPages	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithPages.php	/^trait InteractsWithPages$/;"	t
+InteractsWithQueue	vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php	/^trait InteractsWithQueue$/;"	t
+InteractsWithSession	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithSession.php	/^trait InteractsWithSession$/;"	t
 InterfaceEnumerator	vendor/psy/psysh/src/Psy/Command/ListCommand/InterfaceEnumerator.php	/^class InterfaceEnumerator extends Enumerator$/;"	c
 InterfaceNotFoundException	vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/InterfaceNotFoundException.php	/^class InterfaceNotFoundException extends ClassNotFoundException$/;"	c
 InterfaceNotFoundExceptionSpec	vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/InterfaceNotFoundExceptionSpec.php	/^class InterfaceNotFoundExceptionSpec extends ObjectBehavior$/;"	c
@@ -1743,9 +1762,6 @@ KeyWritten	vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php	/
 KeywordPatch	vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php	/^class KeywordPatch implements ClassPatchInterface$/;"	c
 KeywordPatchSpec	vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/KeywordPatchSpec.php	/^class KeywordPatchSpec extends ObjectBehavior$/;"	c
 KeywordsMatcher	vendor/psy/psysh/src/Psy/TabCompletion/Matcher/KeywordsMatcher.php	/^class KeywordsMatcher extends AbstractMatcher$/;"	c
-LARAVEL_START	bootstrap/autoload.php	/^define('LARAVEL_START', microtime(true));$/;"	d
-LDAP_ESCAPE_DN	vendor/symfony/polyfill-php56/bootstrap.php	/^        define('LDAP_ESCAPE_DN', 2);$/;"	d
-LDAP_ESCAPE_FILTER	vendor/symfony/polyfill-php56/bootstrap.php	/^        define('LDAP_ESCAPE_FILTER', 1);$/;"	d
 LNumber	vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php	/^class LNumber extends Scalar$/;"	c
 Label	vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Label.php	/^class Label extends Stmt$/;"	c
 Lang	vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php	/^class Lang extends Facade$/;"	c
@@ -1810,11 +1826,13 @@ LogTransport	vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport
 Logger	vendor/monolog/monolog/src/Monolog/Logger.php	/^class Logger implements LoggerInterface$/;"	c
 Logger	vendor/symfony/http-kernel/Tests/Logger.php	/^class Logger implements LoggerInterface$/;"	c
 LoggerAwareInterface	vendor/psr/log/Psr/Log/LoggerAwareInterface.php	/^interface LoggerAwareInterface$/;"	i
+LoggerAwareTrait	vendor/psr/log/Psr/Log/LoggerAwareTrait.php	/^trait LoggerAwareTrait$/;"	t
 LoggerDataCollector	vendor/symfony/http-kernel/DataCollector/LoggerDataCollector.php	/^class LoggerDataCollector extends DataCollector implements LateDataCollectorInterface$/;"	c
 LoggerDataCollectorTest	vendor/symfony/http-kernel/Tests/DataCollector/LoggerDataCollectorTest.php	/^class LoggerDataCollectorTest extends \\PHPUnit_Framework_TestCase$/;"	c
 LoggerInterface	vendor/psr/log/Psr/Log/LoggerInterface.php	/^interface LoggerInterface$/;"	i
 LoggerInterfaceTest	vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php	/^abstract class LoggerInterfaceTest extends \\PHPUnit_Framework_TestCase$/;"	c
 LoggerTest	vendor/monolog/monolog/tests/Monolog/LoggerTest.php	/^class LoggerTest extends \\PHPUnit_Framework_TestCase$/;"	c
+LoggerTrait	vendor/psr/log/Psr/Log/LoggerTrait.php	/^trait LoggerTrait$/;"	t
 LoggingTranslator	vendor/symfony/translation/LoggingTranslator.php	/^class LoggingTranslator implements TranslatorInterface, TranslatorBagInterface$/;"	c
 LoggingTranslatorTest	vendor/symfony/translation/Tests/LoggingTranslatorTest.php	/^class LoggingTranslatorTest extends \\PHPUnit_Framework_TestCase$/;"	c
 LogglyFormatter	vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php	/^class LogglyFormatter extends JsonFormatter$/;"	c
@@ -1839,9 +1857,7 @@ Lorem	vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php	/^class Lorem extends
 LoremTest	vendor/fzaninotto/faker/test/Faker/Provider/LoremTest.php	/^class LoremTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Luhn	vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php	/^class Luhn$/;"	c
 LuhnTest	vendor/fzaninotto/faker/test/Faker/Calculator/LuhnTest.php	/^class LuhnTest extends \\PHPUnit_Framework_TestCase$/;"	c
-MB_CASE_LOWER	vendor/symfony/polyfill-mbstring/bootstrap.php	/^    define('MB_CASE_LOWER', 1);$/;"	d
-MB_CASE_TITLE	vendor/symfony/polyfill-mbstring/bootstrap.php	/^    define('MB_CASE_TITLE', 2);$/;"	d
-MB_CASE_UPPER	vendor/symfony/polyfill-mbstring/bootstrap.php	/^    define('MB_CASE_UPPER', 0);$/;"	d
+Macroable	vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php	/^trait Macroable$/;"	t
 MagicCallPatch	vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php	/^class MagicCallPatch implements ClassPatchInterface$/;"	c
 MagicCallPatchSpec	vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/MagicCallPatchSpec.php	/^class MagicCallPatchSpec extends ObjectBehavior$/;"	c
 MagicConst	vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php	/^abstract class MagicConst extends Scalar$/;"	c
@@ -1862,6 +1878,7 @@ Mailer	vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php	/^inter
 Mailer	vendor/laravel/framework/src/Illuminate/Mail/Mailer.php	/^class Mailer implements MailerContract, MailQueueContract$/;"	c
 MailgunTransport	vendor/laravel/framework/src/Illuminate/Mail/Transport/MailgunTransport.php	/^class MailgunTransport extends Transport$/;"	c
 MakeAuthCommand	vendor/laravel/framework/src/Illuminate/Auth/Console/MakeAuthCommand.php	/^class MakeAuthCommand extends Command$/;"	c
+MakesHttpRequests	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php	/^trait MakesHttpRequests$/;"	t
 Manager	vendor/laravel/framework/src/Illuminate/Database/Capsule/Manager.php	/^class Manager$/;"	c
 Manager	vendor/laravel/framework/src/Illuminate/Queue/Capsule/Manager.php	/^class Manager$/;"	c
 Manager	vendor/laravel/framework/src/Illuminate/Support/Manager.php	/^abstract class Manager$/;"	c
@@ -1996,6 +2013,7 @@ Mockable	vendor/phpunit/phpunit-mock-objects/tests/_fixture/Mockable.php	/^class
 Mockery	vendor/mockery/mockery/library/Mockery.php	/^class Mockery$/;"	c
 MockeryFoo3	vendor/mockery/mockery/tests/Mockery/ContainerTest.php	/^final class MockeryFoo3$/;"	c
 MockeryFoo4	vendor/mockery/mockery/tests/Mockery/ContainerTest.php	/^class MockeryFoo4$/;"	c
+MockeryPHPUnitIntegration	vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php	/^trait MockeryPHPUnitIntegration$/;"	t
 MockeryTestBar1	vendor/mockery/mockery/tests/Mockery/ContainerTest.php	/^class MockeryTestBar1$/;"	c
 MockeryTestCase	vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php	/^abstract class MockeryTestCase extends \\PHPUnit_Framework_TestCase$/;"	c
 MockeryTestFoo	vendor/mockery/mockery/tests/Mockery/ContainerTest.php	/^class MockeryTestFoo$/;"	c
@@ -2062,6 +2080,7 @@ Mockery_MockTest	vendor/mockery/mockery/tests/Mockery/MockTest.php	/^class Mocke
 Mockery_UseDemeter	vendor/mockery/mockery/tests/Mockery/ExpectationTest.php	/^class Mockery_UseDemeter$/;"	c
 MockingProtectedMethodsTest	vendor/mockery/mockery/tests/Mockery/MockingProtectedMethodsTest.php	/^class MockingProtectedMethodsTest extends MockeryTestCase$/;"	c
 MockingVariadicArgumentsTest	vendor/mockery/mockery/tests/Mockery/MockingVariadicArgumentsTest.php	/^class MockingVariadicArgumentsTest extends MockeryTestCase$/;"	c
+MocksApplicationServices	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.php	/^trait MocksApplicationServices$/;"	t
 Mod	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php	/^class Mod extends AssignOp$/;"	c
 Mod	vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mod.php	/^class Mod extends BinaryOp$/;"	c
 Model	vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php	/^abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializable, QueueableEntity, UrlRoutable$/;"	c
@@ -2204,6 +2223,7 @@ NotPSR0	vendor/symfony/debug/Tests/Fixtures/reallyNotPsr0.php	/^class NotPSR0$/;
 NotPSR0bis	vendor/symfony/debug/Tests/Fixtures/notPsr0Bis.php	/^class NotPSR0bis$/;"	c
 NotPublicTestCase	vendor/phpunit/phpunit/tests/_files/NotPublicTestCase.php	/^class NotPublicTestCase extends PHPUnit_Framework_TestCase$/;"	c
 NotSupportedException	vendor/league/flysystem/src/NotSupportedException.php	/^class NotSupportedException extends RuntimeException$/;"	c
+NotSupportingVisibilityTrait	vendor/league/flysystem/src/Adapter/Polyfill/NotSupportingVisibilityTrait.php	/^trait NotSupportingVisibilityTrait$/;"	t
 NotVoidTestCase	vendor/phpunit/phpunit/tests/_files/NotVoidTestCase.php	/^class NotVoidTestCase extends PHPUnit_Framework_TestCase$/;"	c
 NothingTest	vendor/phpunit/phpunit/tests/_files/NothingTest.php	/^class NothingTest extends PHPUnit_Framework_TestCase$/;"	c
 NullAdapter	vendor/league/flysystem/src/Adapter/NullAdapter.php	/^class NullAdapter extends AbstractAdapter$/;"	c
@@ -2269,11 +2289,8 @@ OutputStyle	vendor/symfony/console/Style/OutputStyle.php	/^abstract class Output
 OutputTest	vendor/symfony/console/Tests/Output/OutputTest.php	/^class OutputTest extends \\PHPUnit_Framework_TestCase$/;"	c
 OutputTestCase	vendor/phpunit/phpunit/tests/_files/OutputTestCase.php	/^class OutputTestCase extends PHPUnit_Framework_TestCase$/;"	c
 OverrideTestCase	vendor/phpunit/phpunit/tests/_files/OverrideTestCase.php	/^class OverrideTestCase extends OneTestCase$/;"	c
-PHPAB_VERSION	vendor/phpunit/phpunit/build/bin/phpab	/^define('PHPAB_VERSION', '1.21.0');$/;"	d
 PHPConsoleHandler	vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php	/^class PHPConsoleHandler extends AbstractProcessingHandler$/;"	c
 PHPConsoleHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/PHPConsoleHandlerTest.php	/^class PHPConsoleHandlerTest extends TestCase$/;"	c
-PHPUNIT_COMPOSER_INSTALL	vendor/bin/phpunit	/^        define('PHPUNIT_COMPOSER_INSTALL', $file);$/;"	d
-PHPUNIT_COMPOSER_INSTALL	vendor/phpunit/phpunit/phpunit	/^        define('PHPUNIT_COMPOSER_INSTALL', $file);$/;"	d
 PHPUnit_Exception	vendor/phpunit/phpunit/src/Exception.php	/^interface PHPUnit_Exception$/;"	i
 PHPUnit_Extensions_GroupTestSuite	vendor/phpunit/phpunit/src/Extensions/GroupTestSuite.php	/^class PHPUnit_Extensions_GroupTestSuite extends PHPUnit_Framework_TestSuite$/;"	c
 PHPUnit_Extensions_PhptTestCase	vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php	/^class PHPUnit_Extensions_PhptTestCase implements PHPUnit_Framework_Test, PHPUnit_Framework_SelfDescribing$/;"	c
@@ -2918,6 +2935,7 @@ Pipeline	vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php	/^class Pi
 PipelineServiceProvider	vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php	/^class PipelineServiceProvider extends ServiceProvider$/;"	c
 PipesInterface	vendor/symfony/process/Pipes/PipesInterface.php	/^interface PipesInterface$/;"	i
 Pivot	vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php	/^class Pivot extends Model$/;"	c
+PluggableTrait	vendor/league/flysystem/src/Plugin/PluggableTrait.php	/^trait PluggableTrait$/;"	t
 PluginInterface	vendor/league/flysystem/src/PluginInterface.php	/^interface PluginInterface$/;"	i
 PluginNotFoundException	vendor/league/flysystem/src/Plugin/PluginNotFoundException.php	/^class PluginNotFoundException extends LogicException$/;"	c
 PluralizationRules	vendor/symfony/translation/PluralizationRules.php	/^class PluralizationRules$/;"	c
@@ -3022,6 +3040,7 @@ Psy	vendor/psy/psysh/test/Psy/Test/Formatter/SignatureFormatterTest.php	/^      
 PsyVersionCommand	vendor/psy/psysh/src/Psy/Command/PsyVersionCommand.php	/^class PsyVersionCommand extends Command$/;"	c
 Psy_Test_CodeCleaner_ValidClassNamePass_Alpha	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                class Psy_Test_CodeCleaner_ValidClassNamePass_Alpha {}$/;"	c
 Psy_Test_CodeCleaner_ValidClassNamePass_Alpha	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                interface Psy_Test_CodeCleaner_ValidClassNamePass_Alpha {}$/;"	i
+Psy_Test_CodeCleaner_ValidClassNamePass_Alpha	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                trait Psy_Test_CodeCleaner_ValidClassNamePass_Alpha {}$/;"	t
 Psy_Test_CodeCleaner_ValidClassNamePass_ClassWithStatic	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                class Psy_Test_CodeCleaner_ValidClassNamePass_ClassWithStatic {$/;"	c
 Psy_Test_CodeCleaner_ValidClassNamePass_Eta	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                    class Psy_Test_CodeCleaner_ValidClassNamePass_Eta {}$/;"	c
 Psy_Test_CodeCleaner_ValidClassNamePass_Eta	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^                namespace { class Psy_Test_CodeCleaner_ValidClassNamePass_Eta {}; }$/;"	c
@@ -3043,12 +3062,11 @@ Queue	vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php	/^class 
 QueueEntityResolver	vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php	/^class QueueEntityResolver implements EntityResolverContract$/;"	c
 QueueManager	vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php	/^class QueueManager implements FactoryContract, MonitorContract$/;"	c
 QueueServiceProvider	vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php	/^class QueueServiceProvider extends ServiceProvider$/;"	c
+Queueable	vendor/laravel/framework/src/Illuminate/Bus/Queueable.php	/^trait Queueable$/;"	t
 QueueableEntity	vendor/laravel/framework/src/Illuminate/Contracts/Queue/QueueableEntity.php	/^interface QueueableEntity$/;"	i
 QueuedJob	vendor/laravel/framework/src/Illuminate/Foundation/Console/QueuedJob.php	/^class QueuedJob$/;"	c
 QueueingDispatcher	vendor/laravel/framework/src/Illuminate/Contracts/Bus/QueueingDispatcher.php	/^interface QueueingDispatcher extends Dispatcher$/;"	i
 QueueingFactory	vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php	/^interface QueueingFactory extends Factory$/;"	i
-RANDOM_COMPAT_READ_BUFFER	vendor/paragonie/random_compat/lib/random.php	/^        define('RANDOM_COMPAT_READ_BUFFER', 8);$/;"	d
-RANDOM_COMPAT_READ_BUFFER	vendor/paragonie/random_compat/lib/random_bytes_dev_urandom.php	/^    define('RANDOM_COMPAT_READ_BUFFER', 8);$/;"	d
 RandomCompat_intval	vendor/paragonie/random_compat/lib/cast_to_int.php	/^    function RandomCompat_intval($number, $fail_open = false)$/;"	f
 RandomCompat_strlen	vendor/paragonie/random_compat/lib/byte_safe_strings.php	/^        function RandomCompat_strlen($binary_string)$/;"	f
 RandomCompat_substr	vendor/paragonie/random_compat/lib/byte_safe_strings.php	/^        function RandomCompat_substr($binary_string, $start, $length = null)$/;"	f
@@ -3078,6 +3096,7 @@ RedirectableUrlMatcher	vendor/symfony/routing/Tests/Fixtures/RedirectableUrlMatc
 RedirectableUrlMatcherInterface	vendor/symfony/routing/Matcher/RedirectableUrlMatcherInterface.php	/^interface RedirectableUrlMatcherInterface$/;"	i
 RedirectableUrlMatcherTest	vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php	/^class RedirectableUrlMatcherTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Redirector	vendor/laravel/framework/src/Illuminate/Routing/Redirector.php	/^class Redirector$/;"	c
+RedirectsUsers	vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php	/^trait RedirectsUsers$/;"	t
 Redis	vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php	/^class Redis extends Facade$/;"	c
 RedisBroadcaster	vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php	/^class RedisBroadcaster implements Broadcaster$/;"	c
 RedisConnector	vendor/laravel/framework/src/Illuminate/Queue/Connectors/RedisConnector.php	/^class RedisConnector implements ConnectorInterface$/;"	c
@@ -3102,6 +3121,7 @@ RegisterFacades	vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/Reg
 RegisterListenersPass	vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php	/^class RegisterListenersPass implements CompilerPassInterface$/;"	c
 RegisterListenersPassTest	vendor/symfony/event-dispatcher/Tests/DependencyInjection/RegisterListenersPassTest.php	/^class RegisterListenersPassTest extends \\PHPUnit_Framework_TestCase$/;"	c
 RegisterProviders	vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php	/^class RegisterProviders$/;"	c
+RegistersUsers	vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php	/^trait RegistersUsers$/;"	t
 Registrar	vendor/laravel/framework/src/Illuminate/Contracts/Auth/Registrar.php	/^interface Registrar$/;"	i
 Registrar	vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php	/^interface Registrar$/;"	i
 Registry	vendor/monolog/monolog/src/Monolog/Registry.php	/^class Registry$/;"	c
@@ -3143,6 +3163,7 @@ RequirementsClassBeforeClassHookTest	vendor/phpunit/phpunit/tests/_files/Require
 RequirementsClassDocBlockTest	vendor/phpunit/phpunit/tests/_files/RequirementsClassDocBlockTest.php	/^class RequirementsClassDocBlockTest$/;"	c
 RequirementsTest	vendor/phpunit/phpunit/tests/_files/RequirementsTest.php	/^class RequirementsTest extends PHPUnit_Framework_TestCase$/;"	c
 ResetCommand	vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php	/^class ResetCommand extends Command$/;"	c
+ResetsPasswords	vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php	/^trait ResetsPasswords$/;"	t
 ResourceCaster	vendor/symfony/var-dumper/Caster/ResourceCaster.php	/^class ResourceCaster$/;"	c
 ResourceComparator	vendor/sebastian/comparator/src/ResourceComparator.php	/^class ResourceComparator extends Comparator$/;"	c
 ResourceComparatorTest	vendor/sebastian/comparator/tests/ResourceComparatorTest.php	/^class ResourceComparatorTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -3163,9 +3184,11 @@ ResponseListener	vendor/symfony/http-kernel/EventListener/ResponseListener.php	/
 ResponseListenerTest	vendor/symfony/http-kernel/Tests/EventListener/ResponseListenerTest.php	/^class ResponseListenerTest extends \\PHPUnit_Framework_TestCase$/;"	c
 ResponseTest	vendor/symfony/http-foundation/Tests/ResponseTest.php	/^class ResponseTest extends ResponseTestCase$/;"	c
 ResponseTestCase	vendor/symfony/http-foundation/Tests/ResponseTestCase.php	/^abstract class ResponseTestCase extends \\PHPUnit_Framework_TestCase$/;"	c
+ResponseTrait	vendor/laravel/framework/src/Illuminate/Http/ResponseTrait.php	/^trait ResponseTrait$/;"	t
 RestartCommand	vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php	/^class RestartCommand extends Command$/;"	c
 Restorer	vendor/sebastian/global-state/src/Restorer.php	/^class Restorer$/;"	c
 ResultMatcher	vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php	/^class ResultMatcher extends \\Hamcrest\\FeatureMatcher$/;"	c
+RetrievesMultipleKeys	vendor/laravel/framework/src/Illuminate/Cache/RetrievesMultipleKeys.php	/^trait RetrievesMultipleKeys$/;"	t
 RetryCommand	vendor/laravel/framework/src/Illuminate/Queue/Console/RetryCommand.php	/^class RetryCommand extends Command$/;"	c
 ReturnArgumentPromise	vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnArgumentPromise.php	/^class ReturnArgumentPromise implements PromiseInterface$/;"	c
 ReturnArgumentPromiseSpec	vendor/phpspec/prophecy/spec/Prophecy/Promise/ReturnArgumentPromiseSpec.php	/^class ReturnArgumentPromiseSpec extends ObjectBehavior$/;"	c
@@ -3200,6 +3223,7 @@ RouteCollectionTest	vendor/symfony/routing/Tests/RouteCollectionTest.php	/^class
 RouteCompiler	vendor/symfony/routing/RouteCompiler.php	/^class RouteCompiler implements RouteCompilerInterface$/;"	c
 RouteCompilerInterface	vendor/symfony/routing/RouteCompilerInterface.php	/^interface RouteCompilerInterface$/;"	i
 RouteCompilerTest	vendor/symfony/routing/Tests/RouteCompilerTest.php	/^class RouteCompilerTest extends \\PHPUnit_Framework_TestCase$/;"	c
+RouteDependencyResolverTrait	vendor/laravel/framework/src/Illuminate/Routing/RouteDependencyResolverTrait.php	/^trait RouteDependencyResolverTrait$/;"	t
 RouteListCommand	vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php	/^class RouteListCommand extends Command$/;"	c
 RouteMatched	vendor/laravel/framework/src/Illuminate/Routing/Events/RouteMatched.php	/^class RouteMatched$/;"	c
 RouteNotFoundException	vendor/symfony/routing/Exception/RouteNotFoundException.php	/^class RouteNotFoundException extends \\InvalidArgumentException implements ExceptionInterface$/;"	c
@@ -3231,8 +3255,6 @@ SQLiteConnector	vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLi
 SQLiteGrammar	vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php	/^class SQLiteGrammar extends Grammar$/;"	c
 SQLiteGrammar	vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php	/^class SQLiteGrammar extends Grammar$/;"	c
 SQLiteProcessor	vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php	/^class SQLiteProcessor extends Processor$/;"	c
-STATIC_MATCHERS_FILE	vendor/hamcrest/hamcrest-php/generator/run.php	/^define('STATIC_MATCHERS_FILE', HAMCREST_BASE . DIRECTORY_SEPARATOR . 'Hamcrest' . DIRECTORY_SEPARATOR . 'Matchers.php');$/;"	d
-SWIFT_INIT_LOADED	vendor/swiftmailer/swiftmailer/lib/swift_init.php	/^define('SWIFT_INIT_LOADED', true);$/;"	d
 SampleArrayAccess	vendor/phpunit/phpunit/tests/_files/SampleArrayAccess.php	/^class SampleArrayAccess implements ArrayAccess$/;"	c
 SampleBaseClass	vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SampleBaseClass.php	/^class SampleBaseClass$/;"	c
 SampleClass	vendor/phpunit/phpunit/tests/_files/SampleClass.php	/^class SampleClass$/;"	c
@@ -3271,6 +3293,7 @@ Serializer	vendor/jeremeamia/SuperClosure/src/Serializer.php	/^class Serializer 
 Serializer	vendor/nikic/php-parser/lib/PhpParser/Serializer.php	/^interface Serializer$/;"	i
 Serializer	vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Serializer.php	/^class Serializer$/;"	c
 SerializerInterface	vendor/jeremeamia/SuperClosure/src/SerializerInterface.php	/^interface SerializerInterface$/;"	i
+SerializesModels	vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php	/^trait SerializesModels$/;"	t
 SeriesMatchingOnce	vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/SeriesMatchingOnce.php	/^class SeriesMatchingOnce$/;"	c
 ServeCommand	vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php	/^class ServeCommand extends Command$/;"	c
 ServerBag	vendor/symfony/http-foundation/ServerBag.php	/^class ServerBag extends ParameterBag$/;"	c
@@ -3316,6 +3339,7 @@ SignatureFormatterTest	vendor/psy/psysh/test/Psy/Test/Formatter/SignatureFormatt
 SimpleBootstrapFourPresenter	vendor/laravel/framework/src/Illuminate/Pagination/SimpleBootstrapFourPresenter.php	/^class SimpleBootstrapFourPresenter extends BootstrapFourPresenter$/;"	c
 SimpleBootstrapThreePresenter	vendor/laravel/framework/src/Illuminate/Pagination/SimpleBootstrapThreePresenter.php	/^class SimpleBootstrapThreePresenter extends BootstrapThreePresenter$/;"	c
 SimpleSerializableAsset	vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php	/^class SimpleSerializableAsset implements Serializable$/;"	c
+SimpleTraitAsset	vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleTraitAsset.php	/^trait SimpleTraitAsset$/;"	t
 SinceTag	vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SinceTag.php	/^class SinceTag extends VersionTag$/;"	c
 SinceTagTest	vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/SinceTagTest.php	/^class SinceTagTest extends \\PHPUnit_Framework_TestCase$/;"	c
 Singleton	vendor/phpunit/phpunit/tests/_files/Singleton.php	/^class Singleton$/;"	c
@@ -3330,9 +3354,11 @@ Snapshot	vendor/sebastian/global-state/src/Snapshot.php	/^class Snapshot$/;"	c
 SnapshotClass	vendor/sebastian/global-state/tests/_fixture/SnapshotClass.php	/^class SnapshotClass$/;"	c
 SnapshotDomDocument	vendor/sebastian/global-state/tests/_fixture/SnapshotDomDocument.php	/^class SnapshotDomDocument extends DomDocument$/;"	c
 SnapshotTest	vendor/sebastian/global-state/tests/SnapshotTest.php	/^class SnapshotTest extends PHPUnit_Framework_TestCase$/;"	c
+SnapshotTrait	vendor/sebastian/global-state/tests/_fixture/SnapshotTrait.php	/^trait SnapshotTrait$/;"	t
 SoCool	vendor/mockery/mockery/tests/Mockery/ContainerTest.php	/^class SoCool$/;"	c
 SocketHandler	vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php	/^class SocketHandler extends AbstractProcessingHandler$/;"	c
 SocketHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/SocketHandlerTest.php	/^class SocketHandlerTest extends TestCase$/;"	c
+SoftDeletes	vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletes.php	/^trait SoftDeletes$/;"	t
 SoftDeletingScope	vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php	/^class SoftDeletingScope implements Scope$/;"	c
 SomeClass	vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php	/^abstract class SomeClass extends SomeOtherClass implements A\\Few, \\Interfaces$/;"	c
 SomeClass	vendor/phpunit/phpunit-mock-objects/tests/_fixture/SomeClass.php	/^class SomeClass$/;"	c
@@ -3395,9 +3421,13 @@ StreamHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest
 StreamHasher	vendor/league/flysystem/src/Util/StreamHasher.php	/^class StreamHasher$/;"	c
 StreamOutput	vendor/symfony/console/Output/StreamOutput.php	/^class StreamOutput extends Output$/;"	c
 StreamOutputTest	vendor/symfony/console/Tests/Output/StreamOutputTest.php	/^class StreamOutputTest extends \\PHPUnit_Framework_TestCase$/;"	c
+StreamedCopyTrait	vendor/league/flysystem/src/Adapter/Polyfill/StreamedCopyTrait.php	/^trait StreamedCopyTrait$/;"	t
+StreamedReadingTrait	vendor/league/flysystem/src/Adapter/Polyfill/StreamedReadingTrait.php	/^trait StreamedReadingTrait$/;"	t
 StreamedResponse	vendor/symfony/http-foundation/StreamedResponse.php	/^class StreamedResponse extends Response$/;"	c
 StreamedResponseListener	vendor/symfony/http-kernel/EventListener/StreamedResponseListener.php	/^class StreamedResponseListener implements EventSubscriberInterface$/;"	c
 StreamedResponseTest	vendor/symfony/http-foundation/Tests/StreamedResponseTest.php	/^class StreamedResponseTest extends \\PHPUnit_Framework_TestCase$/;"	c
+StreamedTrait	vendor/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php	/^trait StreamedTrait$/;"	t
+StreamedWritingTrait	vendor/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php	/^trait StreamedWritingTrait$/;"	t
 StrictTypesException	vendor/classpreloader/classpreloader/src/Exceptions/StrictTypesException.php	/^class StrictTypesException extends Exception implements VisitorExceptionInterface$/;"	c
 StrictTypesPass	vendor/psy/psysh/src/Psy/CodeCleaner/StrictTypesPass.php	/^class StrictTypesPass extends CodeCleanerPass$/;"	c
 StrictTypesPassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/StrictTypesPassTest.php	/^class StrictTypesPassTest extends CodeCleanerTestCase$/;"	c
@@ -3744,11 +3774,6 @@ SyslogHandler	vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php	/^cla
 SyslogHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/SyslogHandlerTest.php	/^class SyslogHandlerTest extends \\PHPUnit_Framework_TestCase$/;"	c
 SyslogUdpHandler	vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php	/^class SyslogUdpHandler extends AbstractSyslogHandler$/;"	c
 SyslogUdpHandlerTest	vendor/monolog/monolog/tests/Monolog/Handler/SyslogUdpHandlerTest.php	/^class SyslogUdpHandlerTest extends \\PHPUnit_Framework_TestCase$/;"	c
-T_CALLABLE	vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	/^    define('T_CALLABLE', 1003);$/;"	d
-T_FINALLY	vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	/^    define('T_FINALLY', 1004);$/;"	d
-T_INSTEADOF	vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	/^    define('T_INSTEADOF', 1002);$/;"	d
-T_TRAIT	vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	/^    define('T_TRAIT', 1001);$/;"	d
-T_YIELD	vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	/^    define('T_YIELD', 1005);$/;"	d
 Table	vendor/symfony/console/Helper/Table.php	/^class Table$/;"	c
 TableCell	vendor/symfony/console/Helper/TableCell.php	/^class TableCell$/;"	c
 TableCell	vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php	/^class TableCell$/;"	c
@@ -3871,6 +3896,7 @@ Theta	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidClassNamePassTest.php	/^  
 Thingy	vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php	/^class Thingy$/;"	c
 ThisDetectorVisitor	vendor/jeremeamia/SuperClosure/src/Analyzer/Visitor/ThisDetectorVisitor.php	/^final class ThisDetectorVisitor extends NodeVisitor$/;"	c
 ThrottleRequests	vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php	/^class ThrottleRequests$/;"	c
+ThrottlesLogins	vendor/laravel/framework/src/Illuminate/Foundation/Auth/ThrottlesLogins.php	/^trait ThrottlesLogins$/;"	t
 ThrowExceptionTestCase	vendor/phpunit/phpunit/tests/_files/ThrowExceptionTestCase.php	/^class ThrowExceptionTestCase extends PHPUnit_Framework_TestCase$/;"	c
 ThrowNoExceptionTestCase	vendor/phpunit/phpunit/tests/_files/ThrowNoExceptionTestCase.php	/^class ThrowNoExceptionTestCase extends PHPUnit_Framework_TestCase$/;"	c
 ThrowPromise	vendor/phpspec/prophecy/src/Prophecy/Promise/ThrowPromise.php	/^class ThrowPromise implements PromiseInterface$/;"	c
@@ -4012,6 +4038,7 @@ UrlMatcherInterface	vendor/symfony/routing/Matcher/UrlMatcherInterface.php	/^int
 UrlMatcherTest	vendor/symfony/routing/Tests/Matcher/UrlMatcherTest.php	/^class UrlMatcherTest extends \\PHPUnit_Framework_TestCase$/;"	c
 UrlRoutable	vendor/laravel/framework/src/Illuminate/Contracts/Routing/UrlRoutable.php	/^interface UrlRoutable$/;"	i
 UrlWindow	vendor/laravel/framework/src/Illuminate/Pagination/UrlWindow.php	/^class UrlWindow$/;"	c
+UrlWindowPresenterTrait	vendor/laravel/framework/src/Illuminate/Pagination/UrlWindowPresenterTrait.php	/^trait UrlWindowPresenterTrait$/;"	t
 UseStatementPass	vendor/psy/psysh/src/Psy/CodeCleaner/UseStatementPass.php	/^class UseStatementPass extends NamespaceAwarePass$/;"	c
 UseStatementPassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/UseStatementPassTest.php	/^class UseStatementPassTest extends CodeCleanerTestCase$/;"	c
 UseTest	vendor/nikic/php-parser/test/PhpParser/Builder/UseTest.php	/^class UseTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -4046,7 +4073,9 @@ ValidConstantPass	vendor/psy/psysh/src/Psy/CodeCleaner/ValidConstantPass.php	/^c
 ValidConstantPassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidConstantPassTest.php	/^class ValidConstantPassTest extends CodeCleanerTestCase$/;"	c
 ValidFunctionNamePass	vendor/psy/psysh/src/Psy/CodeCleaner/ValidFunctionNamePass.php	/^class ValidFunctionNamePass extends NamespaceAwarePass$/;"	c
 ValidFunctionNamePassTest	vendor/psy/psysh/test/Psy/Test/CodeCleaner/ValidFunctionNamePassTest.php	/^class ValidFunctionNamePassTest extends CodeCleanerTestCase$/;"	c
+ValidatesRequests	vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php	/^trait ValidatesRequests$/;"	t
 ValidatesWhenResolved	vendor/laravel/framework/src/Illuminate/Contracts/Validation/ValidatesWhenResolved.php	/^interface ValidatesWhenResolved$/;"	i
+ValidatesWhenResolvedTrait	vendor/laravel/framework/src/Illuminate/Validation/ValidatesWhenResolvedTrait.php	/^trait ValidatesWhenResolvedTrait$/;"	t
 ValidationException	vendor/laravel/framework/src/Illuminate/Contracts/Validation/ValidationException.php	/^class ValidationException extends RuntimeException$/;"	c
 ValidationException	vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidationException.php	/^class ValidationException extends BaseException$/;"	c
 ValidationException	vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php	/^class ValidationException extends Exception$/;"	c
@@ -4062,6 +4091,7 @@ ValueExporterTest	vendor/symfony/http-kernel/Tests/DataCollector/Util/ValueExpor
 VarCloner	vendor/symfony/var-dumper/Cloner/VarCloner.php	/^class VarCloner extends AbstractCloner$/;"	c
 VarClonerTest	vendor/symfony/var-dumper/Tests/VarClonerTest.php	/^class VarClonerTest extends \\PHPUnit_Framework_TestCase$/;"	c
 VarDumper	vendor/symfony/var-dumper/VarDumper.php	/^class VarDumper$/;"	c
+VarDumperTestTrait	vendor/symfony/var-dumper/Test/VarDumperTestTrait.php	/^trait VarDumperTestTrait$/;"	t
 VarDumperTestTraitTest	vendor/symfony/var-dumper/Tests/Test/VarDumperTestTraitTest.php	/^class VarDumperTestTraitTest extends \\PHPUnit_Framework_TestCase$/;"	c
 VarTag	vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php	/^class VarTag extends ParamTag$/;"	c
 VarTagTest	vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/VarTagTest.php	/^class VarTagTest extends \\PHPUnit_Framework_TestCase$/;"	c
@@ -4087,7 +4117,6 @@ ViewErrorBag	vendor/laravel/framework/src/Illuminate/Support/ViewErrorBag.php	/^
 ViewFinderInterface	vendor/laravel/framework/src/Illuminate/View/ViewFinderInterface.php	/^interface ViewFinderInterface$/;"	i
 ViewServiceProvider	vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php	/^class ViewServiceProvider extends ServiceProvider$/;"	c
 VisitorExceptionInterface	vendor/classpreloader/classpreloader/src/Exceptions/VisitorExceptionInterface.php	/^interface VisitorExceptionInterface$/;"	i
-WRAP_WIDTH	vendor/psy/psysh/bin/build-manual	/^define('WRAP_WIDTH', 100);$/;"	d
 WakeUpNoticesAsset	vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/WakeUpNoticesAsset.php	/^class WakeUpNoticesAsset extends ArrayObject$/;"	c
 WarmableInterface	vendor/symfony/http-kernel/CacheWarmer/WarmableInterface.php	/^interface WarmableInterface$/;"	i
 WasRun	vendor/phpunit/phpunit/tests/_files/WasRun.php	/^class WasRun extends PHPUnit_Framework_TestCase$/;"	c
@@ -4104,6 +4133,8 @@ WildfireFormatterTest	vendor/monolog/monolog/tests/Monolog/Formatter/WildfireFor
 WindowsPipes	vendor/symfony/process/Pipes/WindowsPipes.php	/^class WindowsPipes extends AbstractPipes$/;"	c
 WithFinalConstructor	vendor/phpspec/prophecy/spec/Prophecy/Doubler/DoublerSpec.php	/^class WithFinalConstructor$/;"	c
 WithFormatterExpectationTest	vendor/mockery/mockery/tests/Mockery/WithFormatterExpectationTest.php	/^class WithFormatterExpectationTest extends PHPUnit_Framework_TestCase$/;"	c
+WithoutEvents	vendor/laravel/framework/src/Illuminate/Foundation/Testing/WithoutEvents.php	/^trait WithoutEvents$/;"	t
+WithoutMiddleware	vendor/laravel/framework/src/Illuminate/Foundation/Testing/WithoutMiddleware.php	/^trait WithoutMiddleware$/;"	t
 WorkCommand	vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php	/^class WorkCommand extends Command$/;"	c
 Worker	vendor/laravel/framework/src/Illuminate/Queue/Worker.php	/^class Worker$/;"	c
 WorkerStopping	vendor/laravel/framework/src/Illuminate/Queue/Events/WorkerStopping.php	/^class WorkerStopping$/;"	c
@@ -4248,7 +4279,6 @@ __clone	vendor/symfony/routing/RouteCollection.php	/^    public function __clone
 __construct	app/Http/Controllers/Auth/AuthController.php	/^    public function __construct()$/;"	f
 __construct	app/Http/Controllers/Auth/PasswordController.php	/^    public function __construct()$/;"	f
 __construct	app/Http/Controllers/HomeController.php	/^    public function __construct()$/;"	f
-__construct	app/Http/Controllers/TaskController.php	/^	\/\/public function  __construct() {$/;"	f
 __construct	app/Http/Controllers/TaskController.php	/^	public function  __construct(TaskRepository $tasks) {$/;"	f
 __construct	app/Policies/TaskPolicy.php	/^    public function __construct()$/;"	f
 __construct	vendor/classpreloader/classpreloader/src/ClassList.php	/^    public function __construct()$/;"	f
@@ -6013,6 +6043,7 @@ actionReferencesController	vendor/laravel/framework/src/Illuminate/Routing/Route
 activate	vendor/psy/psysh/src/Psy/TabCompletion/AutoCompleter.php	/^    public function activate()$/;"	f
 acts	vendor/jeremeamia/SuperClosure/src/SerializableClosure.php	/^ * This class acts as a wrapper for a closure, and allows it to be serialized.$/;"	c
 adapt	vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php	/^    protected function adapt(FilesystemInterface $filesystem)$/;"	f
+add	public/vendor/composer/ClassLoader.php	/^    public function add($prefix, $paths, $prepend = false)$/;"	f
 add	vendor/composer/ClassLoader.php	/^    public function add($prefix, $paths, $prepend = false)$/;"	f
 add	vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php	/^    public function add($key, $value, $minutes)$/;"	f
 add	vendor/laravel/framework/src/Illuminate/Cache/Repository.php	/^    public function add($key, $value, $minutes)$/;"	f
@@ -6087,6 +6118,7 @@ addChild	vendor/symfony/http-kernel/Profiler/Profile.php	/^    public function a
 addChoice	vendor/symfony/dom-crawler/Field/ChoiceFormField.php	/^    public function addChoice(\\DOMElement $node)$/;"	f
 addClass	vendor/sebastian/global-state/src/Blacklist.php	/^    public function addClass($className)$/;"	f
 addClassEvent	vendor/laravel/framework/src/Illuminate/View/Factory.php	/^    protected function addClassEvent($view, $class, $prefix, $priority = null)$/;"	f
+addClassMap	public/vendor/composer/ClassLoader.php	/^    public function addClassMap(array $classMap)$/;"	f
 addClassMap	vendor/composer/ClassLoader.php	/^    public function addClassMap(array $classMap)$/;"	f
 addClassNamePrefix	vendor/sebastian/global-state/src/Blacklist.php	/^    public function addClassNamePrefix($classNamePrefix)$/;"	f
 addClassResource	vendor/symfony/routing/Loader/ObjectRouteLoader.php	/^    private function addClassResource(\\ReflectionClass $class, RouteCollection $collection)$/;"	f
@@ -6334,6 +6366,7 @@ addPrimaryKeys	vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/
 addProperty	vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php	/^    public function addProperty($name, $visibility = 'public')$/;"	f
 addProvider	vendor/fzaninotto/faker/src/Faker/Generator.php	/^    public function addProvider($provider)$/;"	f
 addPseudoClass	vendor/symfony/css-selector/XPath/Translator.php	/^    public function addPseudoClass(XPathExpr $xpath, $pseudoClass)$/;"	f
+addPsr4	public/vendor/composer/ClassLoader.php	/^    public function addPsr4($prefix, $paths, $prepend = false)$/;"	f
 addPsr4	vendor/composer/ClassLoader.php	/^    public function addPsr4($prefix, $paths, $prepend = false)$/;"	f
 addQuery	vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator.php	/^    public function addQuery($key, $value)$/;"	f
 addQueryString	vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php	/^    protected function addQueryString($uri, array $parameters)$/;"	f
@@ -9462,6 +9495,7 @@ doWrite	vendor/symfony/console/Output/BufferedOutput.php	/^    protected functio
 doWrite	vendor/symfony/console/Output/Output.php	/^    abstract protected function doWrite($message, $newline);$/;"	f
 doWrite	vendor/symfony/console/Output/StreamOutput.php	/^    protected function doWrite($message, $newline)$/;"	f
 doWrite	vendor/symfony/console/Tests/Output/OutputTest.php	/^    protected function doWrite($message, $newline)$/;"	f
+does	public/vendor/composer/ClassLoader.php	/^            \/\/ Remember that this class does not exist.$/;"	c
 does	vendor/composer/ClassLoader.php	/^            \/\/ Remember that this class does not exist.$/;"	c
 does	vendor/fzaninotto/faker/src/Faker/Provider/Base.php	/^     * This function does not mutate the original array. It uses the$/;"	f
 does	vendor/fzaninotto/faker/src/Faker/Provider/Base.php	/^     * This function does not mutate the original string. It uses the$/;"	f
@@ -9511,8 +9545,7 @@ doubler	vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php	/^ * Cached cla
 down	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function down()$/;"	f
 down	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function down()$/;"	f
 down	database/migrations/2016_04_18_102933_create_tasks_table.php	/^    public function down()$/;"	f
-down	database/migrations/2016_06_22_080733_create_tasks_table.php	/^    public function down()$/;"	f
-down	database/migrations/2016_06_22_081704_create_yytest_table.php	/^    public function down()$/;"	f
+down	database/migrations/2016_12_14_085744_helloworld.php	/^    public function down()$/;"	f
 downForMaintenance	vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php	/^    protected function downForMaintenance()$/;"	f
 download	vendor/laravel/framework/src/Illuminate/Contracts/Routing/ResponseFactory.php	/^    public function download($file, $name = null, array $headers = [], $disposition = 'attachment');$/;"	f
 download	vendor/laravel/framework/src/Illuminate/Routing/ResponseFactory.php	/^    public function download($file, $name = null, array $headers = [], $disposition = 'attachment')$/;"	f
@@ -10097,6 +10130,7 @@ fileExists	vendor/phpunit/phpunit/src/Framework/Assert/Functions.php	/^function 
 fileExtension	vendor/fzaninotto/faker/src/Faker/Provider/File.php	/^    public static function fileExtension()$/;"	f
 fileInfo	vendor/psy/psysh/src/Psy/Command/WhereamiCommand.php	/^    protected function fileInfo()$/;"	f
 filenames	vendor/psy/psysh/test/Psy/Test/Formatter/CodeFormatterTest.php	/^    public function filenames()$/;"	f
+files	public/vendor/composer/ClassLoader.php	/^     * Turns on searching the include path for class files.$/;"	c
 files	vendor/composer/ClassLoader.php	/^     * Turns on searching the include path for class files.$/;"	c
 files	vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Filesystem.php	/^    public function files($directory = null, $recursive = false);$/;"	f
 files	vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php	/^    public function files($directory)$/;"	f
@@ -10170,8 +10204,10 @@ findClassInPath	vendor/symfony/debug/FatalErrorHandler/ClassNotFoundFatalErrorHa
 findClasses	vendor/laravel/framework/src/Illuminate/Filesystem/ClassFinder.php	/^    public function findClasses($directory)$/;"	f
 findComposer	vendor/laravel/framework/src/Illuminate/Support/Composer.php	/^    protected function findComposer()$/;"	f
 findExpectation	vendor/mockery/mockery/library/Mockery/ExpectationDirector.php	/^    public function findExpectation(array $args)$/;"	f
+findFile	public/vendor/composer/ClassLoader.php	/^    public function findFile($class)$/;"	f
 findFile	vendor/composer/ClassLoader.php	/^    public function findFile($class)$/;"	f
 findFile	vendor/symfony/debug/Tests/DebugClassLoaderTest.php	/^    public function findFile($class)$/;"	f
+findFileWithExtension	public/vendor/composer/ClassLoader.php	/^    private function findFileWithExtension($class, $ext)$/;"	f
 findFileWithExtension	vendor/composer/ClassLoader.php	/^    private function findFileWithExtension($class, $ext)$/;"	f
 findInPaths	vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php	/^    protected function findInPaths($name, $paths)$/;"	f
 findInScope	vendor/psy/psysh/src/Psy/CodeCleaner/ValidClassNamePass.php	/^    protected function findInScope($name)$/;"	f
@@ -11232,6 +11268,7 @@ getClassCandidates	vendor/symfony/debug/FatalErrorHandler/ClassNotFoundFatalErro
 getClassFiles	vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php	/^    protected function getClassFiles()$/;"	f
 getClassLoader	vendor/symfony/debug/DebugClassLoader.php	/^    public function getClassLoader()$/;"	f
 getClassLoader	vendor/symfony/routing/Tests/Loader/AbstractAnnotationLoaderTest.php	/^    public function getClassLoader($reader)$/;"	f
+getClassMap	public/vendor/composer/ClassLoader.php	/^    public function getClassMap()$/;"	f
 getClassMap	vendor/composer/ClassLoader.php	/^    public function getClassMap()$/;"	f
 getClassMap	vendor/symfony/debug/Tests/DebugClassLoaderTest.php	/^    public function getClassMap()$/;"	f
 getClassMethods	vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php	/^    private function getClassMethods($className)$/;"	f
@@ -11940,7 +11977,9 @@ getFallback	vendor/laravel/framework/src/Illuminate/Translation/Translator.php	/
 getFallbackCatalogue	vendor/symfony/translation/MessageCatalogue.php	/^    public function getFallbackCatalogue()$/;"	f
 getFallbackCatalogue	vendor/symfony/translation/MessageCatalogueInterface.php	/^    public function getFallbackCatalogue();$/;"	f
 getFallbackContent	vendor/symfony/translation/Translator.php	/^    private function getFallbackContent(MessageCatalogue $catalogue)$/;"	f
+getFallbackDirs	public/vendor/composer/ClassLoader.php	/^    public function getFallbackDirs()$/;"	f
 getFallbackDirs	vendor/composer/ClassLoader.php	/^    public function getFallbackDirs()$/;"	f
+getFallbackDirsPsr4	public/vendor/composer/ClassLoader.php	/^    public function getFallbackDirsPsr4()$/;"	f
 getFallbackDirsPsr4	vendor/composer/ClassLoader.php	/^    public function getFallbackDirsPsr4()$/;"	f
 getFallbackLocales	vendor/symfony/translation/Translator.php	/^    public function getFallbackLocales()$/;"	f
 getFallbackMessages	vendor/laravel/framework/src/Illuminate/Validation/Validator.php	/^    public function getFallbackMessages()$/;"	f
@@ -12419,6 +12458,7 @@ getListeners	vendor/symfony/event-dispatcher/EventDispatcherInterface.php	/^    
 getListeners	vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php	/^    public function getListeners($eventName = null)$/;"	f
 getLoadTests	vendor/symfony/routing/Tests/Loader/AnnotationClassLoaderTest.php	/^    public function getLoadTests()$/;"	f
 getLoadedProviders	vendor/laravel/framework/src/Illuminate/Foundation/Application.php	/^    public function getLoadedProviders()$/;"	f
+getLoader	public/vendor/composer/autoload_real.php	/^    public static function getLoader()$/;"	f
 getLoader	vendor/composer/autoload_real.php	/^    public static function getLoader()$/;"	f
 getLoader	vendor/laravel/framework/src/Illuminate/Translation/Translator.php	/^    public function getLoader()$/;"	f
 getLoader	vendor/mockery/mockery/library/Mockery.php	/^    public static function getLoader()$/;"	f
@@ -13126,7 +13166,9 @@ getPrefix	vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php	/^    pub
 getPrefix	vendor/laravel/framework/src/Illuminate/Contracts/Cache/Store.php	/^    public function getPrefix();$/;"	f
 getPrefix	vendor/laravel/framework/src/Illuminate/Routing/Route.php	/^    public function getPrefix()$/;"	f
 getPrefix	vendor/symfony/routing/Matcher/Dumper/DumperPrefixCollection.php	/^    public function getPrefix()$/;"	f
+getPrefixes	public/vendor/composer/ClassLoader.php	/^    public function getPrefixes()$/;"	f
 getPrefixes	vendor/composer/ClassLoader.php	/^    public function getPrefixes()$/;"	f
+getPrefixesPsr4	public/vendor/composer/ClassLoader.php	/^    public function getPrefixesPsr4()$/;"	f
 getPrefixesPsr4	vendor/composer/ClassLoader.php	/^    public function getPrefixesPsr4()$/;"	f
 getPresenceVerifier	vendor/laravel/framework/src/Illuminate/Validation/Factory.php	/^    public function getPresenceVerifier()$/;"	f
 getPresenceVerifier	vendor/laravel/framework/src/Illuminate/Validation/Validator.php	/^    public function getPresenceVerifier()$/;"	f
@@ -14018,6 +14060,7 @@ getUrlRange	vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator
 getUrlSlider	vendor/laravel/framework/src/Illuminate/Pagination/UrlWindow.php	/^    protected function getUrlSlider($onEachSide)$/;"	f
 getUrlencodedPrefix	vendor/symfony/http-foundation/Request.php	/^    private function getUrlencodedPrefix($string, $prefix)$/;"	f
 getUsages	vendor/symfony/console/Command/Command.php	/^    public function getUsages()$/;"	f
+getUseIncludePath	public/vendor/composer/ClassLoader.php	/^    public function getUseIncludePath()$/;"	f
 getUseIncludePath	vendor/composer/ClassLoader.php	/^    public function getUseIncludePath()$/;"	f
 getUsed	vendor/symfony/css-selector/Parser/TokenStream.php	/^    public function getUsed()$/;"	f
 getUser	vendor/laravel/framework/src/Illuminate/Auth/Passwords/PasswordBroker.php	/^    public function getUser(array $credentials)$/;"	f
@@ -14675,6 +14718,7 @@ importFromByteStream	vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/N
 importString	vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream.php	/^    public function importString($string);$/;"	f
 importString	vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream/ArrayCharacterStream.php	/^    public function importString($string)$/;"	f
 importString	vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream/NgCharacterStream.php	/^    public function importString($string)$/;"	f
+in	public/vendor/composer/ClassLoader.php	/^ * In this example, if you try to use a class in the Symfony\\Component$/;"	c
 in	vendor/composer/ClassLoader.php	/^ * In this example, if you try to use a class in the Symfony\\Component$/;"	c
 in	vendor/laravel/framework/src/Illuminate/Filesystem/ClassFinder.php	/^     * Find the class in the tokens starting at a given key.$/;"	c
 in	vendor/paragonie/random_compat/lib/random.php	/^         * We use conditional statements here to define the function in accordance$/;"	f
@@ -14688,6 +14732,7 @@ in	vendor/symfony/http-kernel/Kernel.php	/^     * That optimization is mainly us
 inNamespace	vendor/mockery/mockery/library/Mockery/Generator/DefinedTargetClass.php	/^    public function inNamespace()$/;"	f
 inNamespace	vendor/mockery/mockery/library/Mockery/Generator/TargetClass.php	/^    public function inNamespace();$/;"	f
 inNamespace	vendor/mockery/mockery/library/Mockery/Generator/UndefinedTargetClass.php	/^    public function inNamespace()$/;"	f
+includeFile	public/vendor/composer/ClassLoader.php	/^function includeFile($file)$/;"	f
 includeFile	vendor/composer/ClassLoader.php	/^function includeFile($file)$/;"	f
 includeFile	vendor/symfony/routing/Loader/PhpFileLoader.php	/^    private static function includeFile($file, PhpFileLoader $loader)$/;"	f
 includeStacktraces	vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php	/^    public function includeStacktraces($include = true)$/;"	f
@@ -14915,6 +14960,8 @@ ipAddress	vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php	
 ips	vendor/laravel/framework/src/Illuminate/Http/Request.php	/^    public function ips()$/;"	f
 ipv4	vendor/fzaninotto/faker/src/Faker/Provider/Internet.php	/^    public function ipv4()$/;"	f
 ipv6	vendor/fzaninotto/faker/src/Faker/Provider/Internet.php	/^    public function ipv6()$/;"	f
+is	public/vendor/composer/ClassLoader.php	/^     * Finds the path to the file where the class is defined.$/;"	c
+is	public/vendor/composer/ClassLoader.php	/^ * This class is loosely based on the Symfony UniversalClassLoader.$/;"	c
 is	vendor/classpreloader/classpreloader/src/Factory.php	/^ * This class is a simple way to create a class preloader instance.$/;"	c
 is	vendor/composer/ClassLoader.php	/^     * Finds the path to the file where the class is defined.$/;"	c
 is	vendor/composer/ClassLoader.php	/^ * This class is loosely based on the Symfony UniversalClassLoader.$/;"	c
@@ -15004,6 +15051,7 @@ isCallableWithAtSign	vendor/laravel/framework/src/Illuminate/Container/Container
 isCatchPhraseValid	vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Company.php	/^    protected static function isCatchPhraseValid($catchPhrase)$/;"	f
 isCatchPhraseValid	vendor/fzaninotto/faker/test/Faker/Provider/fr_FR/CompanyTest.php	/^    public static function isCatchPhraseValid($catchPhrase)$/;"	f
 isCatchingExceptions	vendor/symfony/http-kernel/Tests/HttpCache/TestHttpKernel.php	/^    public function isCatchingExceptions()$/;"	f
+isClassMapAuthoritative	public/vendor/composer/ClassLoader.php	/^    public function isClassMapAuthoritative()$/;"	f
 isClassMapAuthoritative	vendor/composer/ClassLoader.php	/^    public function isClassMapAuthoritative()$/;"	f
 isCleared	vendor/symfony/http-foundation/Cookie.php	/^    public function isCleared()$/;"	f
 isClientError	vendor/symfony/http-foundation/Response.php	/^    public function isClientError()$/;"	f
@@ -16175,12 +16223,14 @@ load	vendor/vlucas/phpdotenv/src/Dotenv.php	/^    public function load()$/;"	f
 load	vendor/vlucas/phpdotenv/src/Loader.php	/^    public function load()$/;"	f
 loadCachedRoutes	vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php	/^    protected function loadCachedRoutes()$/;"	f
 loadCatalogue	vendor/symfony/translation/Translator.php	/^    protected function loadCatalogue($locale)$/;"	f
+loadClass	public/vendor/composer/ClassLoader.php	/^    public function loadClass($class)$/;"	f
 loadClass	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^    public function loadClass($class)$/;"	f
 loadClass	vendor/composer/ClassLoader.php	/^    public function loadClass($class)$/;"	f
 loadClass	vendor/mockery/mockery/library/Mockery/Loader.php	/^    public function loadClass($className)$/;"	f
 loadClass	vendor/symfony/debug/DebugClassLoader.php	/^    public function loadClass($class)$/;"	f
 loadClass	vendor/symfony/debug/Tests/DebugClassLoaderTest.php	/^    public function loadClass($class)$/;"	f
 loadClassCache	vendor/symfony/http-kernel/Kernel.php	/^    public function loadClassCache($name = 'classes', $extension = '.php')$/;"	f
+loadClassLoader	public/vendor/composer/autoload_real.php	/^    public static function loadClassLoader($class)$/;"	f
 loadClassLoader	vendor/composer/autoload_real.php	/^    public static function loadClassLoader($class)$/;"	f
 loadConfig	vendor/psy/psysh/src/Psy/Configuration.php	/^    public function loadConfig(array $options)$/;"	f
 loadConfigFile	vendor/psy/psysh/src/Psy/Configuration.php	/^    public function loadConfigFile($file)$/;"	f
@@ -16222,6 +16272,7 @@ loadTranslationsFrom	vendor/laravel/framework/src/Illuminate/Support/ServiceProv
 loadViewsFrom	vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php	/^    protected function loadViewsFrom($path, $namespace)$/;"	f
 loader	bootstrap/autoload.php	/^| Composer provides a convenient, automatically generated class loader$/;"	c
 loader	public/index.php	/^| Composer provides a convenient, automatically generated class loader for$/;"	c
+loader	public/vendor/composer/ClassLoader.php	/^ * ClassLoader implements a PSR-0, PSR-4 and classmap class loader.$/;"	c
 loader	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^     * Create a new class loader instance.$/;"	c
 loader	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^     * Destroy the class loader.$/;"	c
 loader	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^ * This is the class loader class.$/;"	c
@@ -16303,6 +16354,7 @@ longText	vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php	/
 longitude	vendor/fzaninotto/faker/src/Faker/Provider/Address.php	/^    public static function longitude()$/;"	f
 longitude	vendor/fzaninotto/faker/src/Faker/Provider/me_ME/Address.php	/^    public static function longitude()$/;"	f
 looksLikeSetter	vendor/vlucas/phpdotenv/src/Loader.php	/^    protected function looksLikeSetter($line)$/;"	f
+lookup	public/vendor/composer/ClassLoader.php	/^     * Should class lookup fail if not found in the current class map?$/;"	c
 lookup	vendor/composer/ClassLoader.php	/^     * Should class lookup fail if not found in the current class map?$/;"	c
 lookup	vendor/swiftmailer/swiftmailer/lib/classes/Swift/DependencyContainer.php	/^    public function lookup($itemName)$/;"	f
 lookup	vendor/symfony/http-kernel/HttpCache/HttpCache.php	/^    protected function lookup(Request $request, $catch = false)$/;"	f
@@ -16393,6 +16445,8 @@ many	vendor/laravel/framework/src/Illuminate/Cache/Repository.php	/^    public f
 many	vendor/laravel/framework/src/Illuminate/Cache/RetrievesMultipleKeys.php	/^    public function many(array $keys)$/;"	f
 many	vendor/laravel/framework/src/Illuminate/Contracts/Cache/Store.php	/^    public function many(array $keys);$/;"	f
 map	app/Providers/RouteServiceProvider.php	/^    public function map(Router $router)$/;"	f
+map	public/vendor/composer/ClassLoader.php	/^        \/\/ class map lookup$/;"	c
+map	public/vendor/composer/ClassLoader.php	/^     * that have not been registered with the class map.$/;"	c
 map	vendor/composer/ClassLoader.php	/^        \/\/ class map lookup$/;"	c
 map	vendor/composer/ClassLoader.php	/^     * that have not been registered with the class map.$/;"	c
 map	vendor/laravel/framework/src/Illuminate/Support/Collection.php	/^    public function map(callable $callback)$/;"	f
@@ -16888,6 +16942,8 @@ mutexPath	vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEve
 mutexPath	vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php	/^    protected function mutexPath()$/;"	f
 myHandler	vendor/phpunit/phpunit/src/TextUI/Command.php	/^     *     protected function myHandler()$/;"	f
 myOtherHandler	vendor/phpunit/phpunit/src/TextUI/Command.php	/^     *     protected function myOtherHandler ($value)$/;"	f
+name	public/vendor/composer/ClassLoader.php	/^            \/\/ PEAR-like class name$/;"	c
+name	public/vendor/composer/ClassLoader.php	/^            \/\/ namespaced class name$/;"	c
 name	vendor/composer/ClassLoader.php	/^            \/\/ PEAR-like class name$/;"	c
 name	vendor/composer/ClassLoader.php	/^            \/\/ namespaced class name$/;"	c
 name	vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php	/^     * Converts a word into the format for a Doctrine class name. Converts 'table_name' to 'TableName'.$/;"	c
@@ -17373,6 +17429,7 @@ optional	vendor/fzaninotto/faker/src/Faker/Provider/Base.php	/^    public functi
 options	vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php	/^    public function options($uri, $action);$/;"	f
 options	vendor/laravel/framework/src/Illuminate/Routing/Router.php	/^    public function options($uri, $action = null)$/;"	f
 optionsAsText	vendor/psy/psysh/src/Psy/Command/Command.php	/^    private function optionsAsText()$/;"	f
+or	public/vendor/composer/ClassLoader.php	/^     * Loads the given class or interface.$/;"	c
 or	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^     * Loads the given class, interface or trait.$/;"	i
 or	vendor/composer/ClassLoader.php	/^     * Loads the given class or interface.$/;"	c
 or	vendor/laravel/framework/src/Illuminate/Filesystem/ClassFinder.php	/^     * Determine if the given token is a class or interface keyword.$/;"	c
@@ -19584,6 +19641,7 @@ regionSuffix	vendor/fzaninotto/faker/src/Faker/Provider/lv_LV/Address.php	/^    
 regionSuffix	vendor/fzaninotto/faker/src/Faker/Provider/ru_RU/Address.php	/^    public static function regionSuffix()$/;"	f
 regionSuffix	vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Address.php	/^    public static function regionSuffix()$/;"	f
 register	app/Providers/AppServiceProvider.php	/^    public function register()$/;"	f
+register	public/vendor/composer/ClassLoader.php	/^    public function register($prepend = false)$/;"	f
 register	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^    public function register()$/;"	f
 register	vendor/composer/ClassLoader.php	/^    public function register($prepend = false)$/;"	f
 register	vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php	/^    public function register()$/;"	f
@@ -20547,6 +20605,7 @@ sessionHasNotBeenStarted	vendor/symfony/http-kernel/Tests/EventListener/TestSess
 sessionIsPersistent	vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php	/^    protected function sessionIsPersistent(array $config = null)$/;"	f
 sessionMustBeSaved	vendor/symfony/http-kernel/Tests/EventListener/TestSessionListenerTest.php	/^    private function sessionMustBeSaved()$/;"	f
 sessionMustNotBeSaved	vendor/symfony/http-kernel/Tests/EventListener/TestSessionListenerTest.php	/^    private function sessionMustNotBeSaved()$/;"	f
+set	public/vendor/composer/ClassLoader.php	/^    public function set($prefix, $paths)$/;"	f
 set	vendor/composer/ClassLoader.php	/^    public function set($prefix, $paths)$/;"	f
 set	vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php	/^    function set($property)$/;"	f
 set	vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php	/^    public static function set($property)$/;"	f
@@ -20703,6 +20762,7 @@ setChildren	vendor/symfony/http-kernel/Profiler/Profile.php	/^    public functio
 setChunks	vendor/sebastian/diff/src/Diff.php	/^    public function setChunks(array $chunks)$/;"	f
 setClass	vendor/symfony/debug/Exception/FlattenException.php	/^    public function setClass($class)$/;"	f
 setClassCache	vendor/symfony/http-kernel/Kernel.php	/^    public function setClassCache(array $classes)$/;"	f
+setClassMapAuthoritative	public/vendor/composer/ClassLoader.php	/^    public function setClassMapAuthoritative($classMapAuthoritative)$/;"	f
 setClassMapAuthoritative	vendor/composer/ClassLoader.php	/^    public function setClassMapAuthoritative($classMapAuthoritative)$/;"	f
 setClientTtl	vendor/symfony/http-foundation/Response.php	/^    public function setClientTtl($seconds)$/;"	f
 setCode	vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php	/^    public function setCode($code)$/;"	f
@@ -21343,6 +21403,7 @@ setProtocolVersion	vendor/symfony/http-foundation/Response.php	/^    public func
 setProvider	vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php	/^    public function setProvider(UserProvider $provider)$/;"	f
 setProvider	vendor/symfony/http-foundation/Tests/Session/SessionTest.php	/^    public function setProvider()$/;"	f
 setProxyTarget	vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php	/^    public function setProxyTarget($object)$/;"	f
+setPsr4	public/vendor/composer/ClassLoader.php	/^    public function setPsr4($prefix, $paths)$/;"	f
 setPsr4	vendor/composer/ClassLoader.php	/^    public function setPsr4($prefix, $paths)$/;"	f
 setPty	vendor/symfony/process/Process.php	/^    public function setPty($bool)$/;"	f
 setPublic	vendor/symfony/http-foundation/Response.php	/^    public function setPublic()$/;"	f
@@ -21817,6 +21878,7 @@ setUri	vendor/laravel/framework/src/Illuminate/Routing/Route.php	/^    public fu
 setUrl	vendor/symfony/http-kernel/Profiler/Profile.php	/^    public function setUrl($url)$/;"	f
 setUseErrorHandler	vendor/phpunit/phpunit/src/Framework/TestCase.php	/^    public function setUseErrorHandler($useErrorHandler)$/;"	f
 setUseErrorHandlerFromAnnotation	vendor/phpunit/phpunit/src/Framework/TestCase.php	/^    protected function setUseErrorHandlerFromAnnotation()$/;"	f
+setUseIncludePath	public/vendor/composer/ClassLoader.php	/^    public function setUseIncludePath($useIncludePath)$/;"	f
 setUseIncludePath	vendor/composer/ClassLoader.php	/^    public function setUseIncludePath($useIncludePath)$/;"	f
 setUsePcntl	vendor/psy/psysh/src/Psy/Configuration.php	/^    public function setUsePcntl($usePcntl)$/;"	f
 setUseReadline	vendor/psy/psysh/src/Psy/Configuration.php	/^    public function setUseReadline($useReadline)$/;"	f
@@ -28927,6 +28989,7 @@ uncheck	vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/Inte
 unclosedStatementsProvider	vendor/psy/psysh/test/Psy/Test/CodeCleanerTest.php	/^    public function unclosedStatementsProvider()$/;"	f
 unclosedString	vendor/symfony/css-selector/Exception/SyntaxErrorException.php	/^    public static function unclosedString($position)$/;"	f
 uncountable	vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php	/^    protected static function uncountable($value)$/;"	f
+under	public/vendor/composer/ClassLoader.php	/^ * the autoloader will first look for the class under the component\/$/;"	c
 under	vendor/composer/ClassLoader.php	/^ * the autoloader will first look for the class under the component\/$/;"	c
 unescapeCharacter	vendor/symfony/yaml/Unescaper.php	/^    private function unescapeCharacter($value)$/;"	f
 unescapeDoubleQuotedString	vendor/symfony/yaml/Unescaper.php	/^    public function unescapeDoubleQuotedString($value)$/;"	f
@@ -28949,6 +29012,7 @@ unprepared	vendor/laravel/framework/src/Illuminate/Database/Connection.php	/^   
 unprepared	vendor/laravel/framework/src/Illuminate/Database/ConnectionInterface.php	/^    public function unprepared($query);$/;"	f
 unqueue	vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php	/^    public function unqueue($name);$/;"	f
 unqueue	vendor/laravel/framework/src/Illuminate/Cookie/CookieJar.php	/^    public function unqueue($name)$/;"	f
+unregister	public/vendor/composer/ClassLoader.php	/^    public function unregister()$/;"	f
 unregister	vendor/classpreloader/classpreloader/src/ClassLoader.php	/^    public function unregister()$/;"	f
 unregister	vendor/composer/ClassLoader.php	/^    public function unregister()$/;"	f
 unregister	vendor/mockery/mockery/library/Mockery/Loader.php	/^    public function unregister()$/;"	f
@@ -28987,8 +29051,7 @@ unvisReplace	vendor/psy/psysh/src/Psy/Util/Str.php	/^    protected static functi
 up	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function up()$/;"	f
 up	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function up()$/;"	f
 up	database/migrations/2016_04_18_102933_create_tasks_table.php	/^    public function up()$/;"	f
-up	database/migrations/2016_06_22_080733_create_tasks_table.php	/^    public function up()$/;"	f
-up	database/migrations/2016_06_22_081704_create_yytest_table.php	/^    public function up()$/;"	f
+up	database/migrations/2016_12_14_085744_helloworld.php	/^    public function up()$/;"	f
 update	vendor/laravel/framework/src/Illuminate/Database/Connection.php	/^    public function update($query, $bindings = [])$/;"	f
 update	vendor/laravel/framework/src/Illuminate/Database/ConnectionInterface.php	/^    public function update($query, $bindings = []);$/;"	f
 update	vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php	/^    public function update(array $values)$/;"	f

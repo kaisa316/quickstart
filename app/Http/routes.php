@@ -38,23 +38,23 @@ use Illuminate\Http\Request;
 		*/
 		//$first = App\HelloWorld::where('id','>',5)->where('id','<',10)->get();
 		//var_dump($one);
-		return view('helloworld_show');
+		$list = App\HelloWorld::get();
+		//return $list;
+		return view('helloworld_show',['list'=>$list]);
 	});
 
 	//add new one hello world
 	Route::post('/add_hw',function(Request $request) {
-		/*	
 		$name = $request->input('name');
 		$new = new App\HelloWorld();
 		$new->title = $name;
 		$new->save();
-		 */
 		 
 		/*
 		echo $request;
 		App\HelloWorld::create(['title'=>$request->input('name')]);
 		 */
-		echo 'add hw';
+		return redirect('/helloworld');
 	});
 
 	Route::post('update_hw',function(Request $request){
@@ -77,10 +77,13 @@ use Illuminate\Http\Request;
 		$hw = App\HelloWorld::find(27);	
 		$hw->delete();
 		 */
+		//第二种delete 方法
+		//App\HelloWorld::destroy(25);
 		/*
-		App\HelloWorld::destroy(26);
-		 */
+		//第三种删除
 		App\HelloWorld::where('title','')->delete();
+		 */
+		App\HelloWorld::find(22)->forceDelete();
 		return 'delete success';
 	});
 	//hello world end
