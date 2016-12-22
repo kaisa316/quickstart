@@ -45,14 +45,14 @@ use Illuminate\Http\Request;
 
 	//add new one hello world
 	Route::post('/add_hw',function(Request $request) {
-		$name = $request->input('name');
+		$title = $request->input('title');
 		$new = new App\HelloWorld();
-		$new->title = $name;
+		$new->title = $title;
 		$new->save();
 		 
 		/*
 		echo $request;
-		App\HelloWorld::create(['title'=>$request->input('name')]);
+		App\HelloWorld::create(['title'=>$request->input('title')]);
 		 */
 		return redirect('/helloworld');
 	});
@@ -60,7 +60,7 @@ use Illuminate\Http\Request;
 	Route::post('update_hw',function(Request $request){
 		/*
 		$hw = App\HelloWorld::find(20);		
-		$hw->title = $request->input('name');
+		$hw->title = $request->input('title');
 		$hw->save();
 		 */
 		/*
@@ -72,19 +72,25 @@ use Illuminate\Http\Request;
 		return 'update hw';
 	});
 
-	Route::post('delete_hw',function(){
+	Route::post('delete_hw',function(Request $request){
 		/*
 		$hw = App\HelloWorld::find(27);	
 		$hw->delete();
 		 */
 		//第二种delete 方法
-		//App\HelloWorld::destroy(25);
+		$id = $request->input('id');
+		App\HelloWorld::destroy($id);
 		/*
 		//第三种删除
 		App\HelloWorld::where('title','')->delete();
 		 */
-		App\HelloWorld::find(22)->forceDelete();
-		return 'delete success';
+		return redirect('/helloworld');
+	});
+
+	Route::post('test_log',function(Request $request){
+		$log = $request->input('log');
+		Log::info($log);	
+		return redirect('/helloworld');
 	});
 	//hello world end
 

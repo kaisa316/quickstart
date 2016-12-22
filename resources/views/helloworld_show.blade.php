@@ -8,33 +8,65 @@
                 <div class="panel-heading">hello world</div>
 
                 <div class="panel-body">
+		
 
-				<!--add new record-->
-				<form action="{{ url('/add_hw') }}" method="post">
+				<form action="{{ url('/add_hw') }}" method="post" >
                         {{ csrf_field() }}
-						<input type="text" name="name" />
-						<input type="text" name="age"/>
-						<input type="submit" value="新增"/> 
+						<div class="form-group">
+							<label >title：</label>
+								<input type="text" name="title" class="form-control" placeholder="标题"/>
+						</div>
+						<div class="form-group">
+							<label>content:</label>
+							<input type="text" name="content" class="form-control" placeholder="内容"/>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">新增</button>
+						</div>
+
 				</form>
 				<!--更新 -->
-				<form action="{{ url('/update_hw') }}" method="post">
+				<form action="{{ url('/update_hw') }}" method="post" class="form-inline">
                         {{ csrf_field() }}
-						<input type="text" name="name" />
-						<input type="submit" value="更新"/> 
+						<div class="form-group">
+							<label>title:</label>
+							<input type="text" name="title" class="form-control" placeholder="标题"/>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="更新" class="btn btn-default"/> 
+						</div>
 				</form>
-				<!--delete record -->
-				<form action="{{ url('/delete_hw') }}" method="post">
+				<form action="{{ url('/test_log') }}" method="post" >
                         {{ csrf_field() }}
-						<input type="submit" value="删除"/> 
+						<div class="form-group">
+							<label></label>
+							<input type="text" name="log" class="form-control" placeholder="record log message"/>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="send log" class="btn btn-danger"/> 
+						</div>
 				</form>
 
-
-				<table>
+				<table class="table table-hover">
+					<tr>
+						<th>ID</th>
+						<th>title</th>
+						<th>创建时间</th>
+						<th>操作</th>
+					</tr>
 					@foreach($list as $item)
 					<tr>
+						<th>{{$item->id}}</th>
 						<td>{{$item->title}}</td>
 						<td>{{$item->created_at}}</td>
-						<td></td>
+						<td>
+							<!--delete record -->
+							<form action="{{ url('/delete_hw') }}" method="post">
+                			        {{ csrf_field() }}
+									<input type="hidden" name="id" value="{{$item->id}}"/>
+									<input type="submit" value="删除" class="btn btn-danger"/> 
+							</form>
+						</td>
 					</tr>
 					@endforeach
 
