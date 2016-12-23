@@ -10,7 +10,7 @@ class HelloWorld extends Model
 {
     use SoftDeletes;
 	protected $table = 'helloworld';
-	protected $fillable = ['title'];
+	//protected $fillable = ['title'];//mass assign
 	protected $dates = ['deleted_at'];
 
 	protected static function boot() {

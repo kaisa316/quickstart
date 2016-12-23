@@ -29,48 +29,49 @@ use Illuminate\Http\Request;
 
 
 	//hello world begin
+	Route::get('/helloworld/','HelloWorld@show_list');
+	/*
 	Route::get('/helloworld',function() {
-		
-		/*
-		$hw_chunk = App\HelloWorld::where('id','>',5)->orderBy('id','desc')->chunk(10,function ($item){
-			echo $item;
-		});
-		*/
+		//$hw_chunk = App\HelloWorld::where('id','>',5)->orderBy('id','desc')->chunk(10,function ($item){
+		//	echo $item;
+		//});
 		//$first = App\HelloWorld::where('id','>',5)->where('id','<',10)->get();
-		//var_dump($one);
-		$list = App\HelloWorld::get();
+		//$list = App\HelloWorld::get();
 		//return $list;
 		return view('helloworld_show',['list'=>$list]);
 	});
+	 */
 
 	//add new one hello world
-	Route::post('/add_hw',function(Request $request) {
-		$title = $request->input('title');
-		$new = new App\HelloWorld();
-		$new->title = $title;
-		$new->save();
-		 
-		/*
-		echo $request;
-		App\HelloWorld::create(['title'=>$request->input('title')]);
-		 */
-		return redirect('/helloworld');
-	});
+	//Route::post('/add_hw',function(Request $request) {
+	//	$title = $request->input('title');
+	//	$new = new App\HelloWorld();
+	//	$new->title = $title;
+	//	$new->save();
+	//	 
+	//	/*
+	//	echo $request;
+	//	App\HelloWorld::create(['title'=>$request->input('title')]);
+	//	 */
+	//	return redirect('/helloworld');
+	//});
 
-	Route::post('update_hw',function(Request $request){
-		/*
-		$hw = App\HelloWorld::find(20);		
-		$hw->title = $request->input('title');
-		$hw->save();
-		 */
-		/*
-		$result = App\HelloWorld::where('id','>',3)->where('id','<',7)->toSql();
-		 */
-		$cond_attr = ['title'=>'nanjing'];
-		$update_attr = ['title'=>'zhangyy'];
-		App\HelloWorld::updateOrCreate($cond_attr,$update_attr);
-		return 'update hw';
-	});
+	//Route::post('update_hw',function(Request $request){
+	//	/*
+	//	$hw = App\HelloWorld::find(20);		
+	//	$hw->title = $request->input('title');
+	//	$hw->save();
+	//	 */
+	//	/*
+	//	$result = App\HelloWorld::where('id','>',3)->where('id','<',7)->toSql();
+	//	 */
+	//	$cond_attr = ['title'=>'nanjing'];
+	//	$update_attr = ['title'=>'zhangyy'];
+	//	App\HelloWorld::updateOrCreate($cond_attr,$update_attr);
+	//	return 'update hw';
+	//});
+	Route::get('get_one_helloworld/{id}','HelloWorld@get_one');
+	Route::post('add_or_update','HelloWorld@save');
 
 	Route::post('delete_hw',function(Request $request){
 		/*

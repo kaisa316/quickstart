@@ -36,6 +36,7 @@
 							<input type="submit" value="更新" class="btn btn-default"/> 
 						</div>
 				</form>
+				<!--log test -->
 				<form action="{{ url('/test_log') }}" method="post" >
                         {{ csrf_field() }}
 						<div class="form-group">
@@ -60,6 +61,7 @@
 						<td>{{$item->title}}</td>
 						<td>{{$item->created_at}}</td>
 						<td>
+							<a href="{{url('/get_one_helloworld').'/'.$item->id}}" class="btn btn-success" >修改</a>
 							<!--delete record -->
 							<form action="{{ url('/delete_hw') }}" method="post">
                 			        {{ csrf_field() }}
