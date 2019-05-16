@@ -22,13 +22,13 @@ use Illuminate\Http\Request;
 //cust_begin_zhyy
 	Route::get('/', function (Request $request) {
 		$req = $request->all();
-		return $req;
 		return 'hello world';
 	})->middleware('guest');
-
-
-	//hello world begin
 	Route::get('/helloworld/','HelloWorldController@show_list');
+	Route::get('/kafka/producter','KafkaController@producter');
+	Route::get('/kafka/consumer_lowlevel','KafkaController@consumer_lowlevel');
+	Route::get('/kafka/consumer_store','KafkaController@consumer_store');
+
 	/*
 	Route::get('/helloworld',function() {
 		//$hw_chunk = App\HelloWorld::where('id','>',5)->orderBy('id','desc')->chunk(10,function ($item){
