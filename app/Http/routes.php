@@ -17,19 +17,18 @@
 */
 
 
-//use App\Task;
 use Illuminate\Http\Request;
 
 //cust_begin_zhyy
 	Route::get('/', function (Request $request) {
 		$req = $request->all();
-		
-		return '1111212';
+		return $req;
+		return 'hello world';
 	})->middleware('guest');
 
 
 	//hello world begin
-	Route::get('/helloworld/','HelloWorld@show_list');
+	Route::get('/helloworld/','HelloWorldController@show_list');
 	/*
 	Route::get('/helloworld',function() {
 		//$hw_chunk = App\HelloWorld::where('id','>',5)->orderBy('id','desc')->chunk(10,function ($item){
@@ -70,8 +69,8 @@ use Illuminate\Http\Request;
 	//	App\HelloWorld::updateOrCreate($cond_attr,$update_attr);
 	//	return 'update hw';
 	//});
-	Route::get('get_one_helloworld/{id}','HelloWorld@get_one');
-	Route::post('add_or_update','HelloWorld@save');
+	Route::get('get_one_helloworld/{id}','HelloWorldController@get_one')->where('id','[0-9]+');
+	Route::post('add_or_update','HelloWorldController@update');
 
 	Route::post('delete_hw',function(Request $request){
 		/*
