@@ -26,8 +26,7 @@ use Illuminate\Http\Request;
 	})->middleware('guest');
 	Route::get('/helloworld/','HelloWorldController@show_list');
 	Route::get('/kafka/producter','KafkaController@producter');
-	Route::get('/kafka/consumer_lowlevel','KafkaController@consumer_lowlevel');
-	Route::get('/kafka/consumer_store','KafkaController@consumer_store');
+	Route::get('/kafka/consumer','KafkaController@consumer');
 
 	/*
 	Route::get('/helloworld',function() {
