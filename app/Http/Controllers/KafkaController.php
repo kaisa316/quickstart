@@ -49,7 +49,7 @@ class KafkaController extends Controller {
 		// The first argument is the partition to consume from.
 		// The second argument is the offset at which to start consumption. Valid values
 		// are: RD_KAFKA_OFFSET_BEGINNING, RD_KAFKA_OFFSET_END, RD_KAFKA_OFFSET_STORED.
-		$topic->consumeStart(0, 3);//partition,offset
+		$topic->consumeStart(0, 0);//partition,offset
 		$msg = $topic->consume(0, 3000);
 		var_dump($msg);
 		if (null === $msg) {
@@ -108,10 +108,13 @@ class KafkaController extends Controller {
 		}
 	}
 
+	/**
+	 * 多分区,多消费者 自动平衡非常有用
+	 */
 	private function consumer_highlevel() {
 		$conf = new \RdKafka\Conf();
-		/*// Set a rebalance callback to log partition assignments (optional)
-		$conf->setRebalanceCb(function (RdKafka\KafkaConsumer $kafka, $err, array $partitions = null) {
+		// Set a rebalance callback to log partition assignments (optional)
+		/*$conf->setRebalanceCb(function (RdKafka\KafkaConsumer $kafka, $err, array $partitions = null) {
 			switch ($err) {
 			case RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS:
 				echo "Assign: ";
@@ -128,8 +131,8 @@ class KafkaController extends Controller {
 			default:
 				throw new \Exception($err);
 			}
-		});
-*/
+		});*/
+
 		// Configure the group.id. All consumer with the same group.id will consume
 		// different partitions.
 		$conf->set('group.id', 'yy_test_group');
@@ -142,9 +145,9 @@ class KafkaController extends Controller {
 		// Set where to start consuming messages when there is no initial offset in
 		// offset store or the desired offset is out of range.
 		// 'smallest': start from the beginning
-		$topicConf->set('auto.offset.reset', 'smallest');
+		/*$topicConf->set('auto.offset.reset', 'smallest');
 		$topicConf->set('enable.auto.commit', 'false');
-		$topicConf->set('offset.store.method', 'broker');
+		$topicConf->set('offset.store.method', 'broker');*/
 
 		// Set the configuration to use for subscribed/assigned topics
 		$conf->setDefaultTopicConf($topicConf);
@@ -158,7 +161,7 @@ class KafkaController extends Controller {
 			case RD_KAFKA_RESP_ERR_NO_ERROR:
 				//success
 				var_dump($message);
-				$consumer->commit();
+				//$consumer->commit();
 				break;
 			case RD_KAFKA_RESP_ERR__PARTITION_EOF:
 				echo "No more messages; will wait for more\n";
