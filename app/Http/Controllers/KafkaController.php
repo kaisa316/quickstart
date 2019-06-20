@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use \RdKafka;
 
 class KafkaController extends Controller {
 
@@ -49,7 +50,7 @@ class KafkaController extends Controller {
 		// The first argument is the partition to consume from.
 		// The second argument is the offset at which to start consumption. Valid values
 		// are: RD_KAFKA_OFFSET_BEGINNING, RD_KAFKA_OFFSET_END, RD_KAFKA_OFFSET_STORED.
-		$topic->consumeStart(0, 0);//partition,offset
+		$topic->consumeStart(0, 6);//partition,offset
 		$msg = $topic->consume(0, 3000);
 		var_dump($msg);
 		if (null === $msg) {
@@ -112,9 +113,10 @@ class KafkaController extends Controller {
 	 * 多分区,多消费者 自动平衡非常有用
 	 */
 	private function consumer_highlevel() {
-		$conf = new \RdKafka\Conf();
+		$conf = new RdKafka\Conf();
+
 		// Set a rebalance callback to log partition assignments (optional)
-		/*$conf->setRebalanceCb(function (RdKafka\KafkaConsumer $kafka, $err, array $partitions = null) {
+		$conf->setRebalanceCb(function (RdKafka\KafkaConsumer $kafka, $err, array $partitions = null) {
 			switch ($err) {
 			case RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS:
 				echo "Assign: ";
@@ -131,53 +133,39 @@ class KafkaController extends Controller {
 			default:
 				throw new \Exception($err);
 			}
-		});*/
+		});
 
 		// Configure the group.id. All consumer with the same group.id will consume
 		// different partitions.
-		$conf->set('group.id', 'yy_test_group');
+		$conf->set('group.id', 'myConsumerGroup');
 
 		// Initial list of Kafka brokers
 		$conf->set('metadata.broker.list', '127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094');
 
-		$topicConf = new \RdKafka\TopicConf();
+		$topicConf = new RdKafka\TopicConf();
 
 		// Set where to start consuming messages when there is no initial offset in
 		// offset store or the desired offset is out of range.
 		// 'smallest': start from the beginning
-		/*$topicConf->set('auto.offset.reset', 'smallest');
-		$topicConf->set('enable.auto.commit', 'false');
-		$topicConf->set('offset.store.method', 'broker');*/
+		$topicConf->set('auto.offset.reset', 'smallest');
 
 		// Set the configuration to use for subscribed/assigned topics
 		$conf->setDefaultTopicConf($topicConf);
 
-		$consumer = new \RdKafka\KafkaConsumer($conf);
+		$consumer = new RdKafka\KafkaConsumer($conf);
 
 		// Subscribe to topic 'test'
 		$consumer->subscribe(['test']);
-		$message = $consumer->consume(20*1000);//超时时间要设置长一些
-		switch ($message->err) {
-			case RD_KAFKA_RESP_ERR_NO_ERROR:
-				//success
-				var_dump($message);
-				//$consumer->commit();
-				break;
-			case RD_KAFKA_RESP_ERR__PARTITION_EOF:
-				echo "No more messages; will wait for more\n";
-				break;
-			case RD_KAFKA_RESP_ERR__TIMED_OUT:
-				echo "Timed out\n";
-				break;
-			default:
-				throw new \Exception($message->errstr(), $message->err);
-				break;
-		}
-		/*while (true) {
-			$message = $consumer->consume(3000);
+
+		echo "Waiting for partition assignment... (make take some time when\n";
+		echo "quickly re-joining the group after leaving it.)\n";
+
+		while (true) {
+			$message = $consumer->consume(120*1000);
 			switch ($message->err) {
 			case RD_KAFKA_RESP_ERR_NO_ERROR:
 				var_dump($message);
+				file_put_contents('/project/data/ci_cache/kafka.log',json_encode($message),FILE_APPEND);
 				break;
 			case RD_KAFKA_RESP_ERR__PARTITION_EOF:
 				echo "No more messages; will wait for more\n";
@@ -189,7 +177,7 @@ class KafkaController extends Controller {
 				throw new \Exception($message->errstr(), $message->err);
 				break;
 			}
-		}*/
+		}
 	}	
 
 }
