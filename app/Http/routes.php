@@ -24,9 +24,17 @@ use Illuminate\Http\Request;
 		$req = $request->all();
 		return 'hello world';
 	})->middleware('guest');
+
+	Route::get('/debug-sentry', function (Request $request) {
+		$req = $request->all();
+		throw new Exception('My first Sentry error!');
+	});
+
+
 	Route::get('/helloworld/','HelloWorldController@show_list');
 	Route::get('/kafka/producter','KafkaController@producter');
 	Route::get('/kafka/consumer','KafkaController@consumer');
+
 
 	/*
 	Route::get('/helloworld',function() {
