@@ -49,6 +49,7 @@ final class Versions
   'ramsey/uuid' => '3.8.0@d09ea80159c1929d75b3f9c60504d613aeb4a1e3',
   'sentry/sdk' => '2.0.3@91c36aec83e4c1c5801b64ef4927b78a5aa8ce7f',
   'sentry/sentry' => '2.1.1@8e27e6c5fcf6f01fc2e5235dd14cc0b2b347d793',
+  'sentry/sentry-laravel' => '1.0.2@f4c5544a6dc0472c6f75def70ccc4d4d96d711f7',
   'swiftmailer/swiftmailer' => 'v5.4.1@0697e6aa65c83edf97bb0f23d8763f94e3f11421',
   'symfony/console' => 'v3.0.4@6b1175135bc2a74c08a28d89761272de8beed8cd',
   'symfony/debug' => 'v3.0.4@a06d10888a45afd97534506afb058ec38d9ba35b',
@@ -90,7 +91,7 @@ final class Versions
   'symfony/css-selector' => 'v3.0.4@65e764f404685f2dc20c057e889b3ad04b2e2db0',
   'symfony/dom-crawler' => 'v3.0.4@18a06d7a9af41718c20764a674a0ebba3bc40d1f',
   'symfony/yaml' => 'v3.0.4@0047c8366744a16de7516622c5b7355336afae96',
-  'laravel/laravel' => 'dev-master@0a52a1d8f8450b9ea044d644fc9f0d3486dff12d',
+  'laravel/laravel' => 'dev-master@a5637ee03c87e7f86f0d42594d86623b80486616',
 );
 
     private function __construct()

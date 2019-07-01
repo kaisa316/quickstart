@@ -19,13 +19,13 @@ class ComposerStaticInit362812a2feef5fbd6138b81f756efbc8
         '0b0974a5566a1077e4f2e111341112c1' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_server.php',
         '1ca3bc274755662169f9629d5412a1da' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_uploaded_files.php',
         '40360c0b9b437e69bcbb7f1349ce029e' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/parse_cookie_header.php',
-        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         '9077b4d8b12bf36c716ea93b712cf7a4' => __DIR__ . '/..' . '/sentry/sentry/src/Sdk.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
@@ -326,6 +326,13 @@ class ComposerStaticInit362812a2feef5fbd6138b81f756efbc8
             'phpDocumentor' => 
             array (
                 0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            ),
+        ),
+        'S' => 
+        array (
+            'Sentry\\Laravel\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/sentry/sentry-laravel/src',
             ),
         ),
         'P' => 
@@ -2690,6 +2697,14 @@ class ComposerStaticInit362812a2feef5fbd6138b81f756efbc8
         'Sentry\\Integration\\IntegrationInterface' => __DIR__ . '/..' . '/sentry/sentry/src/Integration/IntegrationInterface.php',
         'Sentry\\Integration\\ModulesIntegration' => __DIR__ . '/..' . '/sentry/sentry/src/Integration/ModulesIntegration.php',
         'Sentry\\Integration\\RequestIntegration' => __DIR__ . '/..' . '/sentry/sentry/src/Integration/RequestIntegration.php',
+        'Sentry\\Laravel\\EventHandler' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/EventHandler.php',
+        'Sentry\\Laravel\\Facade' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/Facade.php',
+        'Sentry\\Laravel\\Integration' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/Integration.php',
+        'Sentry\\Laravel\\LogChannel' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/LogChannel.php',
+        'Sentry\\Laravel\\SentryHandler' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/SentryHandler.php',
+        'Sentry\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/ServiceProvider.php',
+        'Sentry\\Laravel\\TestCommand' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/TestCommand.php',
+        'Sentry\\Laravel\\Version' => __DIR__ . '/..' . '/sentry/sentry-laravel/src/Sentry/Laravel/Version.php',
         'Sentry\\Monolog\\Handler' => __DIR__ . '/..' . '/sentry/sentry/src/Monolog/Handler.php',
         'Sentry\\Options' => __DIR__ . '/..' . '/sentry/sentry/src/Options.php',
         'Sentry\\Serializer\\AbstractSerializer' => __DIR__ . '/..' . '/sentry/sentry/src/Serializer/AbstractSerializer.php',
