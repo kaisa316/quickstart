@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
 //cust_begin_zhyy
 	Route::get('/', function (Request $request) {
 		$req = $request->all();
-		return 'hello world';
+		return 'hello ddd';
 	})->middleware('guest');
 
 	Route::get('/debug-sentry', function (Request $request) {
@@ -34,6 +34,9 @@ use Illuminate\Http\Request;
 	Route::get('/helloworld/','HelloWorldController@show_list');
 	Route::get('/kafka/producter','KafkaController@producter');
 	Route::get('/kafka/consumer','KafkaController@consumer');
+	Route::get('/encrypt/rsa_encrypt','encrypt\RsaController@rsa_encrypt');
+	Route::get('/encrypt/rsa_decrypt','encrypt\RsaController@rsa_decrypt');
+
 
 
 	/*

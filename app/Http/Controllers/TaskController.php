@@ -22,12 +22,19 @@ class TaskController extends Controller
 	 * retrival data
 	 */
 	public function index(Request $request)	{
+		$params = $request->all();
+		$this->dd($params);
+		
 		$tasks = Task::orderBy('created_at', 'asc')->get();
 		//$tasks = $request->user()->tasks()->get();
 		$tasks = [];
 		return view('tasks', [
 			'tasks' => $tasks
 		]);
+	}
+
+	private function dd($params) {
+		vadump($params);
 	}
 
 	/**
