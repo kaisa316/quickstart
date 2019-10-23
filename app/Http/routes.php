@@ -30,6 +30,12 @@ use Illuminate\Http\Request;
 		throw new Exception('My first Sentry error!');
 	});
 
+	Route::get('/test', function (Request $request) {
+		$s = "</ br>";
+		$sa = htmlentities($s);
+		return $sa;	
+	});
+
 	/**
 	 * 实时运行PHP code
 	 */
